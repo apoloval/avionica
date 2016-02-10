@@ -6,8 +6,16 @@
 #define AVIONICA_MAX_DEVICES 32
 #define AVIONICA_SPI_SETTINGS SPISettings(250000, MSBFIRST, SPI_MODE0)
 
+#define BEGIN_AVIONICA_DEVICE(name) \
+   struct name : ::Avionica::Device { 
+
+#define END_AVIONICA_DEVICE(name) } name; 
+
 struct Avionica {
-   
+
+   typedef unsigned char Event;
+   typedef unsigned char Command;
+
    struct Device {
       const char* name;
       int ss_pin;
@@ -22,9 +30,9 @@ struct Avionica {
          digitalWrite(ss_pin, HIGH);
       }
 
-      int receive_event() {
+      Event receive_event() {
          if (digitalRead(sr_pin)) {
-            return -1;
+            return 0;
          }
          SPI.beginTransaction(AVIONICA_SPI_SETTINGS);
          digitalWrite(ss_pin, LOW);
@@ -35,7 +43,27 @@ struct Avionica {
          return event;
       }
 
-      unsigned char send_command(unsigned char cmd) {
+      void _loop() {
+         unsigned char event = receive_event();
+         if (event) {
+            on_event(event);
+         }
+         loop();
+      }
+
+      void send_command(Command cmd) {
+         Event reply = _send_command(cmd);
+         if (reply) {
+            on_event(reply);
+         }
+      }
+
+      virtual void loop() {}
+      virtual void on_event(Event) {}      
+
+   private:
+
+      Event _send_command(Command cmd) {
          SPI.beginTransaction(AVIONICA_SPI_SETTINGS);
          digitalWrite(ss_pin, LOW);
          while (digitalRead(sr_pin));
@@ -52,18 +80,24 @@ struct Avionica {
       SPI.begin();
    }
 
-   Device* add_device(const char* name, int ss_pin, int sr_pin) {
+   Device* add_device(const char* name, Device* dev, int ss_pin, int sr_pin) {
       if (ndevices == AVIONICA_MAX_DEVICES - 1) {
          return NULL;
       }
-      Device *dev = &devices[ndevices++];
+      devices[ndevices++] = dev;
       dev->begin(name, ss_pin, sr_pin);
       return dev;
    }
 
+   void loop() {
+      for (int i = 0; i < ndevices; i++) {
+         devices[i]->_loop();
+      }
+   }
+
 private:
 
-   Device devices[AVIONICA_MAX_DEVICES];
+   Device* devices[AVIONICA_MAX_DEVICES];
    unsigned int ndevices;
 
 } Avionica;
