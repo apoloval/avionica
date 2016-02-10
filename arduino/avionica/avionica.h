@@ -3,7 +3,12 @@
 
 #include <spi.h>
 
+#ifdef ARDUINO_AVR_UNO
+#define AVIONICA_MAX_DEVICES 12
+#else
 #define AVIONICA_MAX_DEVICES 32
+#endif
+
 #define AVIONICA_SPI_SETTINGS SPISettings(250000, MSBFIRST, SPI_MODE0)
 
 #define BEGIN_AVIONICA_DEVICE(name) \
