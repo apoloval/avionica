@@ -48,12 +48,27 @@ struct Avionica {
          return event;
       }
 
-      void loop() {
+      void loop(bool console_enabled) {
+         if (console_enabled) { console_loop(); }
+         else { regular_loop(); }
+      }
+
+      void regular_loop() {
          unsigned char event = receive_event();
          if (event) {
             on_event(event);
          }
          on_loop();
+      }
+
+      void console_loop() {
+         unsigned char event = receive_event();         
+         if (event) {
+            Serial.print("Event from '");
+            Serial.print(name);
+            Serial.print("': ");
+            Serial.println(event);
+         }
       }
 
       void send_command(Command cmd) {
@@ -103,7 +118,7 @@ struct Avionica {
          process_console_command();
       }
       for (int i = 0; i < ndevices; i++) {
-         devices[i]->loop();
+         devices[i]->loop(console_enabled);
       }
    }
 
