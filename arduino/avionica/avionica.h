@@ -48,8 +48,8 @@ struct Avionica {
          return event;
       }
 
-      void loop(bool console_enabled) {
-         if (console_enabled) { console_loop(); }
+      void loop(bool debug) {
+         if (debug) { debug_loop(); }
          else { regular_loop(); }
       }
 
@@ -61,7 +61,7 @@ struct Avionica {
          on_loop();
       }
 
-      void console_loop() {
+      void debug_loop() {
          unsigned char event = receive_event();         
          if (event) {
             Serial.print("Event from '");
@@ -90,7 +90,7 @@ struct Avionica {
 
    void begin() {
       ndevices = 0;
-      console_enabled = false;
+      debug = false;
       SPI.begin();
    }
 
@@ -114,26 +114,26 @@ struct Avionica {
    }
 
    void loop() {
-      if (console_enabled) {
-         process_console_command();
+      if (debug) {
+         process_debug_command();
       }
       for (int i = 0; i < ndevices; i++) {
-         devices[i]->loop(console_enabled);
+         devices[i]->loop(debug);
       }
    }
 
-   void enable_console() {
-      console_enabled = true;      
+   void debug_mode(bool active = true) {
+      debug = active;      
    }
 
 private:
 
    Device* devices[AVIONICA_MAX_DEVICES];
    unsigned int ndevices;
-   bool console_enabled;
+   bool debug;
    String serial_buffer;
 
-   void process_console_command() {
+   void process_debug_command() {
       while (Serial.available()) {
          char c = char(Serial.read());
          serial_buffer += c;
