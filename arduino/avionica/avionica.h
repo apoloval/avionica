@@ -75,6 +75,7 @@ struct Avionica {
 
    void begin() {
       ndevices = 0;
+      console_enabled = false;
       SPI.begin();
    }
 
@@ -87,16 +88,59 @@ struct Avionica {
       return dev;
    }
 
+   bool send_command(const char* dev_name, Command cmd) {
+      for (int i = 0; i < ndevices; i++) {
+         if (strcmp(devices[i]->name, dev_name) == 0) {
+            devices[i]->send_command(cmd);
+            return false;
+         }
+      }
+      return true;
+   }
+
    void loop() {
+      if (console_enabled) {
+         process_console_command();
+      }
       for (int i = 0; i < ndevices; i++) {
          devices[i]->loop();
       }
+   }
+
+   void enable_console() {
+      console_enabled = true;      
    }
 
 private:
 
    Device* devices[AVIONICA_MAX_DEVICES];
    unsigned int ndevices;
+   bool console_enabled;
+   String serial_buffer;
+
+   void process_console_command() {
+      while (Serial.available()) {
+         char c = char(Serial.read());
+         serial_buffer += c;
+         if (c == '\n') {
+            serial_buffer.trim();
+            int sep = serial_buffer.indexOf(':');
+            if (sep != -1) {
+               String dev_name = serial_buffer.substring(0, sep);
+               String cmd_str = serial_buffer.substring(
+                  sep + 1, serial_buffer.length());
+               if (send_command(dev_name.c_str(), cmd_str.toInt())) {
+                  Serial.print("No such device ");
+                  Serial.println(dev_name);
+               }
+            } else {
+               Serial.print("Syntax error in ");
+               Serial.println(serial_buffer);
+            }
+            serial_buffer = "";
+         }
+      }
+   }
 
 } Avionica;
 
