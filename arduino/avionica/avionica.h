@@ -48,36 +48,29 @@ struct Avionica {
          return event;
       }
 
-      void _loop() {
+      void loop() {
          unsigned char event = receive_event();
          if (event) {
             on_event(event);
          }
-         loop();
+         on_loop();
       }
 
       void send_command(Command cmd) {
-         Event reply = _send_command(cmd);
+         SPI.beginTransaction(AVIONICA_SPI_SETTINGS);
+         digitalWrite(ss_pin, LOW);
+         while (digitalRead(sr_pin));
+         int reply = SPI.transfer(cmd);
+         digitalWrite(ss_pin, HIGH);
+         while (!digitalRead(sr_pin));
+         SPI.endTransaction();
          if (reply) {
             on_event(reply);
          }
       }
 
-      virtual void loop() {}
-      virtual void on_event(Event) {}      
-
-   private:
-
-      Event _send_command(Command cmd) {
-         SPI.beginTransaction(AVIONICA_SPI_SETTINGS);
-         digitalWrite(ss_pin, LOW);
-         while (digitalRead(sr_pin));
-         int event = SPI.transfer(cmd);
-         digitalWrite(ss_pin, HIGH);
-         while (!digitalRead(sr_pin));
-         SPI.endTransaction();
-         return event;
-      }
+      virtual void on_loop() {}
+      virtual void on_event(Event) {}            
    };
 
    void begin() {
@@ -96,7 +89,7 @@ struct Avionica {
 
    void loop() {
       for (int i = 0; i < ndevices; i++) {
-         devices[i]->_loop();
+         devices[i]->loop();
       }
    }
 
