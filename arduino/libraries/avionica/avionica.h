@@ -1,7 +1,10 @@
 #ifndef AVIONICA_H
 #define AVIONICA_H
 
-#include <spi.h>
+#include "Arduino.h"
+#include "SPI.h"
+
+#include "sp.h"
 
 #ifdef ARDUINO_AVR_UNO
 #define AVIONICA_MAX_DEVICES 12
@@ -35,6 +38,7 @@ struct Avionica {
          pinMode(sr_pin, INPUT);
          digitalWrite(ss_pin, HIGH);
          debug = debug_mode;
+         on_begin();
       }
 
       Event receive_event() {
@@ -66,9 +70,7 @@ struct Avionica {
       void debug_loop() {
          unsigned char event = receive_event();         
          if (event) {
-            Serial.print("Event from '");
-            Serial.print(name);
-            Serial.print("': ");
+            print_from_msg();
             Serial.println(event);
          }
       }
@@ -86,8 +88,31 @@ struct Avionica {
          }
       }
 
+      void observe_lvar(const char* lvar) {
+         if (debug) {
+            print_from_msg();
+         }
+         OACSP.observeLVar(lvar);
+      }
+
+      void observe_offset(word offset, FSUIPC::OffsetLength len) {
+         if (debug) {
+            print_from_msg();
+         }
+         OACSP.observeOffset(offset, len);
+      }
+
+      virtual void on_begin() {}
       virtual void on_loop() {}
-      virtual void on_event(Event) {}            
+      virtual void on_event(Event) {}
+
+   private:
+
+      void print_from_msg() {
+         Serial.print("From '");
+         Serial.print(name);
+         Serial.print("': ");         
+      }
    };
 
    void begin(bool debug_mode = false) {

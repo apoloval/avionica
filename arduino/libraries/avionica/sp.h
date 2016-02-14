@@ -7,16 +7,18 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-#ifndef OAC_OACSP_H
-#define OAC_OACSP_H
+#ifndef AVIONICA_SP_H
+#define AVIONICA_SP_H
 
 #include "Arduino.h"
 
-#define OACSP_PROTOCOL_VERSION 0x01
-#define OACSP_BUFFER_LEN 256
-#define OACSP_MAX_NAME_LEN 64
+#define AVIONICA_SP_VERSION 0x01
+#define AVIONICA_BUFFER_LEN 256
+#define AVIONICA_MAX_NAME_LEN 64
 
-namespace OAC {
+namespace FSUIPC {
+
+typedef word Offset;
 
 enum OffsetLength {
   OFFSET_UINT8,
@@ -28,6 +30,9 @@ enum OffsetLength {
 };
 
 const char* OffsetLengthCode[]  = { "UB", "SB", "UW", "SW", "UD", "SD" };
+}
+
+namespace OAC {
 
 enum EventType {
   NO_EVENT,
@@ -37,13 +42,13 @@ enum EventType {
 
 struct LVarUpdateEvent {
   EventType type;
-  char name[OACSP_MAX_NAME_LEN];
+  char name[AVIONICA_MAX_NAME_LEN];
   long value;
 };
 
 struct OffsetUpdateEvent {
   EventType type;
-  word address;
+  FSUIPC::Offset address;
   long value;
 };
 
@@ -65,7 +70,7 @@ public:
     Serial.begin(baudRate);
     while (!Serial) {} // Wait for port to be open in Leonardo and Due
     Serial.print("BEGIN ");
-    Serial.print(OACSP_PROTOCOL_VERSION, HEX);
+    Serial.print(AVIONICA_SP_VERSION, HEX);
     Serial.print(" ");
     Serial.print(clientName);
     Serial.print('\n');
@@ -88,36 +93,36 @@ public:
     writeLVarAs<int>(lvar, value);
   }
 
-  void writeOffset(word offset, unsigned char value) {
-    writeOffset(offset, OFFSET_UINT8, value);
+  void writeOffset(FSUIPC::Offset offset, unsigned char value) {
+    writeOffset(offset, FSUIPC::OFFSET_UINT8, value);
   }
 
-  void writeOffset(word offset, char value) {
-    writeOffset(offset, OFFSET_SINT8, value);
+  void writeOffset(FSUIPC::Offset offset, char value) {
+    writeOffset(offset, FSUIPC::OFFSET_SINT8, value);
   }
 
-  void writeOffset(word offset, unsigned int value) {
-    writeOffset(offset, OFFSET_UINT16, value);
+  void writeOffset(FSUIPC::Offset offset, unsigned int value) {
+    writeOffset(offset, FSUIPC::OFFSET_UINT16, value);
   }
 
-  void writeOffset(word offset, int value) {
-    writeOffset(offset, OFFSET_SINT16, value);
+  void writeOffset(FSUIPC::Offset offset, int value) {
+    writeOffset(offset, FSUIPC::OFFSET_SINT16, value);
   }
 
-  void writeOffset(word offset, unsigned long value) {
-    writeOffset(offset, OFFSET_UINT32, value);
+  void writeOffset(FSUIPC::Offset offset, unsigned long value) {
+    writeOffset(offset, FSUIPC::OFFSET_UINT32, value);
   }
 
-  void writeOffset(word offset, long value) {
-    writeOffset(offset, OFFSET_SINT32, value);
+  void writeOffset(FSUIPC::Offset offset, long value) {
+    writeOffset(offset, FSUIPC::OFFSET_SINT32, value);
   }
 
   template <typename T>
-  void writeOffset(word offset, OffsetLength len, T value) {
+  void writeOffset(FSUIPC::Offset offset, FSUIPC::OffsetLength len, T value) {
     Serial.print("WRITE_OFFSET ");
     Serial.print(offset, HEX);
     Serial.print(":");
-    Serial.print(OffsetLengthCode[len]);
+    Serial.print(FSUIPC::OffsetLengthCode[len]);
     Serial.print(" ");
     Serial.print(value, DEC);
     Serial.print('\n');
@@ -129,11 +134,11 @@ public:
     Serial.print('\n');
   }
 
-  void observeOffset(word offset, OffsetLength len) {
+  void observeOffset(FSUIPC::Offset offset, FSUIPC::OffsetLength len) {
     Serial.print("OBS_OFFSET ");
     Serial.print(offset, HEX);
     Serial.print(":");
-    Serial.print(OffsetLengthCode[len]);
+    Serial.print(FSUIPC::OffsetLengthCode[len]);
     Serial.print('\n');
   }
 
@@ -166,7 +171,7 @@ public:
       strcmp(polledEvent.lvar.name, lvar) == 0) ? &(polledEvent.lvar) : NULL;
   }
 
-  OffsetUpdateEvent* offsetUpdateEvent(word address) {
+  OffsetUpdateEvent* offsetUpdateEvent(FSUIPC::Offset address) {
     return (
       (polledEvent.type == OFFSET_UPDATE) && 
       (polledEvent.offset.address == address)) ? &(polledEvent.offset) : NULL;
