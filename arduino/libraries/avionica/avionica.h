@@ -54,15 +54,26 @@ struct Avionica {
          return event;
       }
 
-      void loop() {
+      void loop(OAC::Event *sp_event) {
          if (debug) { debug_loop(); }
-         else { regular_loop(); }
+         else { regular_loop(sp_event); }
       }
 
-      void regular_loop() {
-         unsigned char event = receive_event();
-         if (event) {
-            on_event(event);
+      void regular_loop(OAC::Event *sp_event) {
+         unsigned char spi_event = receive_event();
+         if (spi_event) {
+            on_event(spi_event);
+         }
+         if (sp_event) {
+            switch (sp_event->type) {
+               case OAC::LVAR_UPDATE:
+                  on_lvar_update(sp_event->lvar.name, sp_event->lvar.value);
+                  break;
+               case OAC::OFFSET_UPDATE:
+                  on_offset_update(
+                     sp_event->offset.address, sp_event->offset.value);
+                  break;
+            }
          }
          on_loop();
       }
@@ -88,23 +99,36 @@ struct Avionica {
          }
       }
 
-      void observe_lvar(const char* lvar) {
+      void observe_lvar(LVAR::Name lvar) {
          if (debug) {
             print_from_msg();
          }
          OACSP.observeLVar(lvar);
       }
 
-      void observe_offset(word offset, FSUIPC::OffsetLength len) {
+      void observe_offset(FSUIPC::Offset offset, FSUIPC::OffsetLength len) {
          if (debug) {
             print_from_msg();
          }
          OACSP.observeOffset(offset, len);
       }
 
+      void write_lvar(LVAR::Name name, LVAR::Value value) {
+         OACSP.writeLVar(name, value);
+      }
+
       virtual void on_begin() {}
       virtual void on_loop() {}
       virtual void on_event(Event) {}
+      virtual void on_lvar_update(LVAR::Name name, LVAR::Value value) {}
+      virtual void on_offset_update(
+         FSUIPC::Offset offset, FSUIPC::Value value) {}
+
+   protected:
+
+      bool is_lvar_name(LVAR::Name n1, LVAR::Name n2) {
+         return strcmp(n1, n2) == 0;
+      }
 
    private:
 
@@ -141,11 +165,14 @@ struct Avionica {
    }
 
    void loop() {
+      OAC::Event *sp_event = NULL;
       if (debug) {
          process_debug_command();
+      } else {
+         sp_event = OACSP.pollEvent();
       }
       for (int i = 0; i < ndevices; i++) {
-         devices[i]->loop();
+         devices[i]->loop(sp_event);
       }
    }
 

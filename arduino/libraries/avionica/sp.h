@@ -20,6 +20,8 @@ namespace FSUIPC {
 
 typedef word Offset;
 
+typedef long Value;
+
 enum OffsetLength {
   OFFSET_UINT8,
   OFFSET_SINT8,
@@ -30,6 +32,11 @@ enum OffsetLength {
 };
 
 const char* OffsetLengthCode[]  = { "UB", "SB", "UW", "SW", "UD", "SD" };
+}
+
+namespace LVAR {
+  typedef const char* Name;
+  typedef long Value;
 }
 
 namespace OAC {
@@ -81,7 +88,7 @@ public:
   }
 
   template <typename T> 
-  void writeLVarAs(const char* lvar, T value) {
+  void writeLVarAs(LVAR::Name lvar, T value) {
     Serial.print("WRITE_LVAR ");
     Serial.print(lvar);
     Serial.print(" ");
@@ -89,7 +96,7 @@ public:
     Serial.print('\n');
   }
 
-  void writeLVar(const char* lvar, int value) {
+  void writeLVar(LVAR::Name lvar, int value) {
     writeLVarAs<int>(lvar, value);
   }
 
@@ -128,7 +135,7 @@ public:
     Serial.print('\n');
   }
 
-  void observeLVar(const char* lvar) {
+  void observeLVar(LVAR::Name lvar) {
     Serial.print("OBS_LVAR ");
     Serial.print(lvar);
     Serial.print('\n');
@@ -157,8 +164,8 @@ public:
         buffer = "";
         break;
       }
-      return result;
     }
+    return result;
   }
 
   Event* event() {
