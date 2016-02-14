@@ -25,14 +25,16 @@ struct Avionica {
       const char* name;
       int ss_pin;
       int sr_pin;
+      bool debug;
 
-      void begin(const char* name, int ss_pin, int sr_pin) {
+      void begin(const char* name, int ss_pin, int sr_pin, bool debug_mode) {
          this->name = name;
          this->ss_pin = ss_pin;
          this->sr_pin = sr_pin;
          pinMode(ss_pin, OUTPUT);
          pinMode(sr_pin, INPUT);
          digitalWrite(ss_pin, HIGH);
+         debug = debug_mode;
       }
 
       Event receive_event() {
@@ -48,7 +50,7 @@ struct Avionica {
          return event;
       }
 
-      void loop(bool debug) {
+      void loop() {
          if (debug) { debug_loop(); }
          else { regular_loop(); }
       }
@@ -88,9 +90,9 @@ struct Avionica {
       virtual void on_event(Event) {}            
    };
 
-   void begin() {
+   void begin(bool debug_mode = false) {
       ndevices = 0;
-      debug = false;
+      debug = debug_mode;
       SPI.begin();
    }
 
@@ -99,7 +101,7 @@ struct Avionica {
          return NULL;
       }
       devices[ndevices++] = dev;
-      dev->begin(name, ss_pin, sr_pin);
+      dev->begin(name, ss_pin, sr_pin, debug);
       return dev;
    }
 
@@ -118,12 +120,8 @@ struct Avionica {
          process_debug_command();
       }
       for (int i = 0; i < ndevices; i++) {
-         devices[i]->loop(debug);
+         devices[i]->loop();
       }
-   }
-
-   void debug_mode(bool active = true) {
-      debug = active;      
    }
 
 private:
