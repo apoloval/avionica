@@ -12,6 +12,8 @@
 #define AVIONICA_MAX_DEVICES 32
 #endif
 
+#define AVIONICA_RESET_CMD 0xff
+
 #define AVIONICA_SPI_SETTINGS SPISettings(250000, MSBFIRST, SPI_MODE0)
 
 #define BEGIN_AVIONICA_DEVICE(name) \
@@ -39,6 +41,7 @@ struct Avionica {
          digitalWrite(ss_pin, HIGH);
          debug = debug_mode;
          on_begin();
+         send_command(AVIONICA_RESET_CMD);
       }
 
       Event receive_event() {
