@@ -1,6 +1,6 @@
 /*
- * Open Airbus Cockpit - Arduino OACSP library
- * Copyright (c) 2012-2015 Alvaro Polo
+ * Avionica library for Arduino
+ * Copyright (c) 2012-2016 Alvaro Polo
  *
  * This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
