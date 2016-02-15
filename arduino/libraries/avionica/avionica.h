@@ -139,10 +139,13 @@ struct Avionica {
       }
    };
 
-   void begin(bool debug_mode = false) {
+   void begin(const char* sp_name, bool debug_mode = false) {
       ndevices = 0;
       debug = debug_mode;
       SPI.begin();
+      if (!debug_mode) {
+         OACSP.begin(sp_name, 9600);
+      }
    }
 
    Device* add_device(const char* name, Device* dev, int ss_pin, int sr_pin) {
