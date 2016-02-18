@@ -1,1 +1,6 @@
 installer/
+dist/
+build/
+private/
+Makefile*
+Package-default.bash
