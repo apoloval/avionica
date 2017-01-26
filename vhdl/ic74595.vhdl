@@ -33,13 +33,5 @@ begin
     end if;
   end process;
 
-  -- The process that manages output enabled
-  process (output_reg, oe)
-  begin
-    if oe = '1' then
-      q <= "ZZZZZZZZ";
-    else
-      q <= output_reg;
-    end if;
-  end process;
+  q <= "ZZZZZZZZ" when oe = '1' else output_reg;
 end behavior;
