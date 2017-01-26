@@ -4,11 +4,11 @@ MODULES = \
 TESTS = \
 	ic74595_tb
 
-all: ${MODULES}
+all: test
 
-test: ${MODULES} ${TESTS}
+test: ${TESTS}
 
-%: %.o
+%: %.o ${MODULES}
 	ghdl -e $@
 
 %.o: %.vhdl
