@@ -6,13 +6,13 @@ end ic74595_tb;
 
 architecture behavior of ic74595_tb is
   component ic74595
-    port (ser   : in std_logic;
-          srclk : in std_logic;
-          srclr : in std_logic;
-          rclk  : in std_logic;
+    port (ds    : in std_logic;
+          shcp  : in std_logic;
+          mr    : in std_logic;
+          stcp  : in std_logic;
           oe    : in std_logic;
           q     : out std_logic_vector(7 downto 0);
-          sout  : out std_logic);
+          q7s   : out std_logic);
   end component;
 
   signal clock: std_logic := '0';
@@ -20,21 +20,21 @@ architecture behavior of ic74595_tb is
   signal clear: std_logic := '1';
   signal load: std_logic := '0';
   signal oe: std_logic := '0';
-  signal q: std_logic_vector(7 downto 0) := "00000000";
+  signal q: std_logic_vector(0 to 7) := "00000000";
   signal sout: std_logic;
 
   for ic: ic74595 use entity work.ic74595;
 begin
-  ic: ic74595 port map (ser => serial,
-                        srclk => clock,
-                        srclr => clear,
-                        rclk => load,
+  ic: ic74595 port map (ds => serial,
+                        shcp => clock,
+                        mr => clear,
+                        stcp => load,
                         oe => oe,
                         q => q,
-                        sout => sout);
+                        q7s => sout);
 
   process
-    constant byte: std_logic_vector := "01001101";
+    constant byte: std_logic_vector(7 downto 0) := "01001101";
   begin
     report "should output Z when not OE";
     oe <= '1';
@@ -46,16 +46,16 @@ begin
 
     report "should shift some data in";
     for i in byte'range loop
-      serial <= byte(7-i);
+      serial <= byte(i);
       clock <= '1'; wait for 4 ns; clock <= '0'; wait for 4 ns;
     end loop;
     load <= '1'; wait for 4 ns; load <= '0'; wait for 4 ns;
     assert q = "01001101";
 
     report "should write rightmost bit in serial out";
-    assert sout = '1';
-    clock <= '1'; wait for 4 ns; clock <= '0'; wait for 4 ns;
     assert sout = '0';
+    clock <= '1'; wait for 4 ns; clock <= '0'; wait for 4 ns;
+    assert sout = '1';
 
     report "should clear on signal";
     clear <= '0';
