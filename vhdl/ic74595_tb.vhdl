@@ -11,7 +11,8 @@ architecture behavior of ic74595_tb is
           srclr : in std_logic;
           rclk  : in std_logic;
           oe    : in std_logic;
-          q     : out std_logic_vector(7 downto 0));
+          q     : out std_logic_vector(7 downto 0);
+          sout  : out std_logic);
   end component;
 
   signal clock: std_logic := '0';
@@ -20,6 +21,7 @@ architecture behavior of ic74595_tb is
   signal load: std_logic := '0';
   signal oe: std_logic := '0';
   signal q: std_logic_vector(7 downto 0) := "00000000";
+  signal sout: std_logic;
 
   for ic: ic74595 use entity work.ic74595;
 begin
@@ -28,10 +30,11 @@ begin
                         srclr => clear,
                         rclk => load,
                         oe => oe,
-                        q => q);
+                        q => q,
+                        sout => sout);
 
   process
-    constant byte: std_logic_vector := "01001011";
+    constant byte: std_logic_vector := "01001101";
   begin
     report "should output Z when not OE";
     oe <= '1';
@@ -47,7 +50,12 @@ begin
       clock <= '1'; wait for 4 ns; clock <= '0'; wait for 4 ns;
     end loop;
     load <= '1'; wait for 4 ns; load <= '0'; wait for 4 ns;
-    assert q = "01001011";
+    assert q = "01001101";
+
+    report "should write rightmost bit in serial out";
+    assert sout = '1';
+    clock <= '1'; wait for 4 ns; clock <= '0'; wait for 4 ns;
+    assert sout = '0';
 
     report "should clear on signal";
     clear <= '0';

@@ -7,7 +7,8 @@ entity ic74595 is
         srclr : in std_logic;
         rclk  : in std_logic;
         oe    : in std_logic;
-        q     : out std_logic_vector(7 downto 0));
+        q     : out std_logic_vector(7 downto 0);
+        sout  : out std_logic);
 end ic74595;
 
 architecture behavior of ic74595 is
@@ -34,4 +35,6 @@ begin
   end process;
 
   q <= "ZZZZZZZZ" when oe = '1' else output_reg;
+
+  sout <= shift_reg(0);
 end behavior;
