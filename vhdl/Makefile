@@ -1,7 +1,9 @@
 MODULES = \
+	ic4021.o \
 	ic74595.o
 
 TESTS = \
+	ic4021_tb \
 	ic74595_tb
 
 all: test
