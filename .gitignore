@@ -1,2 +1,8 @@
 gerber/
 _autosave*
+
+*.o
+*.swp
+*.cf
+*.vcd
+*_tb
