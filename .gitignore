@@ -1,6 +1,7 @@
 gerber/
 _autosave*
 
+*.bak
 *.o
 *.swp
 *.cf
