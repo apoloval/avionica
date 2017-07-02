@@ -329,17 +329,6 @@ F 3 "" H 7250 2600 50  0000 C CNN
 	1    7250 2600
 	1    0    0    -1  
 $EndComp
-$Comp
-L C_Small C2
-U 1 1 5951E848
-P 7550 2600
-F 0 "C2" H 7560 2670 50  0000 L CNN
-F 1 "100nF" H 7560 2520 50  0000 L CNN
-F 2 "" H 7550 2600 50  0000 C CNN
-F 3 "" H 7550 2600 50  0000 C CNN
-	1    7550 2600
-	1    0    0    -1  
-$EndComp
 NoConn ~ 9250 4250
 Text GLabel 8050 4250 0    50   Input ~ 0
 L3
@@ -635,9 +624,9 @@ Wire Wire Line
 Wire Wire Line
 	8250 4350 8050 4350
 Wire Wire Line
-	3900 5900 3900 6000
+	3900 6000 3900 5900
 Wire Wire Line
-	3900 6000 1700 6000
+	1700 6000 3900 6000
 Wire Wire Line
 	3650 5900 3650 6000
 Connection ~ 3650 6000
@@ -714,9 +703,9 @@ Wire Wire Line
 Text GLabel 1700 6950 0    50   Output ~ 0
 DIG1
 Wire Wire Line
-	3150 6850 3150 6950
+	3150 6950 3150 6850
 Wire Wire Line
-	3150 6950 1700 6950
+	1700 6950 3150 6950
 Wire Wire Line
 	2900 6850 2900 6950
 Connection ~ 2900 6950
@@ -838,7 +827,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 4100 3000 4000
 Wire Wire Line
-	2850 4400 2850 4100
+	2850 4100 2850 4400
 Connection ~ 2850 4100
 Wire Wire Line
 	2700 3700 2700 3600
@@ -1080,6 +1069,17 @@ F 1 "1uF" H 3410 3820 50  0000 L CNN
 F 2 "" H 3400 3900 50  0000 C CNN
 F 3 "" H 3400 3900 50  0000 C CNN
 	1    3400 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1_Small C2
+U 1 1 5958C1F6
+P 7550 2600
+F 0 "C2" H 7560 2670 50  0000 L CNN
+F 1 "1uF" H 7560 2520 50  0000 L CNN
+F 2 "" H 7550 2600 50  0000 C CNN
+F 3 "" H 7550 2600 50  0000 C CNN
+	1    7550 2600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
