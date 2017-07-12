@@ -286,21 +286,21 @@ F 3 "" H 3350 2600 50  0000 C CNN
 	1    3350 2600
 	1    0    0    -1  
 $EndComp
-Text GLabel 2050 1450 1    50   Input ~ 0
+Text GLabel 3750 1800 2    50   Input ~ 0
 Y1
-Text GLabel 2450 1450 1    50   Input ~ 0
+Text GLabel 3750 2100 2    50   Input ~ 0
 Y2
-Text GLabel 2850 1450 1    50   Input ~ 0
+Text GLabel 3750 2400 2    50   Input ~ 0
 Y3
-Text GLabel 3250 1450 1    50   Input ~ 0
+Text GLabel 3750 2700 2    50   Input ~ 0
 Y4
-Text GLabel 3750 1800 2    50   Output ~ 0
+Text GLabel 2050 1450 1    50   Output ~ 0
 X1
-Text GLabel 3750 2100 2    50   Output ~ 0
+Text GLabel 2450 1450 1    50   Output ~ 0
 X2
-Text GLabel 3750 2400 2    50   Output ~ 0
+Text GLabel 2850 1450 1    50   Output ~ 0
 X3
-Text GLabel 3750 2700 2    50   Output ~ 0
+Text GLabel 3250 1450 1    50   Output ~ 0
 X4
 Text GLabel 5900 2200 0    50   Input ~ 0
 X1
