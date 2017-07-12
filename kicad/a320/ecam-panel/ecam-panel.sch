@@ -648,19 +648,19 @@ Connection ~ 2400 6000
 Wire Wire Line
 	2150 5900 2150 6000
 Connection ~ 2150 6000
-Text GLabel 2150 5500 1    50   Input ~ 0
+Text GLabel 3650 5500 1    50   Input ~ 0
 SEGA
-Text GLabel 2400 5500 1    50   Input ~ 0
+Text GLabel 3400 5500 1    50   Input ~ 0
 SEGB
 Text GLabel 2900 5500 1    50   Input ~ 0
 SEGD
-Text GLabel 2650 5500 1    50   Input ~ 0
-SEGC
 Text GLabel 3150 5500 1    50   Input ~ 0
+SEGC
+Text GLabel 2650 5500 1    50   Input ~ 0
 SEGE
-Text GLabel 3400 5500 1    50   Input ~ 0
+Text GLabel 2400 5500 1    50   Input ~ 0
 SEGF
-Text GLabel 3650 5500 1    50   Input ~ 0
+Text GLabel 2150 5500 1    50   Input ~ 0
 SEGG
 Text GLabel 3900 5500 1    50   Input ~ 0
 SEGDP
@@ -680,16 +680,6 @@ Wire Wire Line
 	3650 5500 3650 5700
 Wire Wire Line
 	3900 5500 3900 5700
-Text GLabel 2150 6450 1    50   Input ~ 0
-SEGA
-Text GLabel 2400 6450 1    50   Input ~ 0
-SEGB
-Text GLabel 2900 6450 1    50   Input ~ 0
-SEGD
-Text GLabel 2650 6450 1    50   Input ~ 0
-SEGC
-Text GLabel 3150 6450 1    50   Input ~ 0
-SEGE
 Wire Wire Line
 	2150 6450 2150 6650
 Wire Wire Line
@@ -1082,4 +1072,14 @@ F 3 "" H 7550 2600 50  0000 C CNN
 	1    7550 2600
 	1    0    0    -1  
 $EndComp
+Text GLabel 2900 6450 1    50   Input ~ 0
+SEGD
+Text GLabel 3150 6450 1    50   Input ~ 0
+SEGC
+Text GLabel 2650 6450 1    50   Input ~ 0
+SEGE
+Text GLabel 2400 6450 1    50   Input ~ 0
+SEGF
+Text GLabel 2150 6450 1    50   Input ~ 0
+SEGG
 $EndSCHEMATC
