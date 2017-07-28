@@ -1,10 +1,10 @@
 (module Omron-B3F-12mm (layer F.Cu) (tedit 59689A77)
   (descr "SW PUSH 12mm https://www.e-switch.com/system/asset/product_line/data_sheet/143/TL1100.pdf")
   (tags "tact sw push 12mm")
-  (fp_text reference REF** (at 6.08 -4.66) (layer F.SilkS)
+  (fp_text reference SW6 (at 6.08 -4.66) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value B3F-12mm (at 6.62 9.93) (layer F.Fab)
+  (fp_text value SW_PUSH_SMALL (at 6.62 9.93) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start 0.25 8.5) (end 12.25 8.5) (layer F.Fab) (width 0.1))
@@ -31,7 +31,7 @@
   (pad 2 thru_hole oval (at 12.5 5) (size 3.048 1.7272) (drill 0.8128) (layers *.Cu *.Mask))
   (pad 1 thru_hole oval (at 0 0) (size 3.048 1.7272) (drill 0.8128) (layers *.Cu *.Mask))
   (pad 2 thru_hole oval (at 0 5) (size 3.048 1.7272) (drill 0.8128) (layers *.Cu *.Mask))
-  (model ${KISYS3DMOD}/Buttons_Switches_THT.3dshapes/SW_PUSH-12mm.wrl
+  (model ${KIPRJMOD}/../../modules/packages3d/avionica.3dshapes/Omron-B3F-12mm.wrl
     (at (xyz 0.248 -0.1 0))
     (scale (xyz 3.93701 3.93701 3.93701))
     (rotate (xyz 0 0 0))
