@@ -1,6 +1,7 @@
 gerber/
 _autosave*
 
+*-bak
 *-cache.lib
 *.bck
 *.bak
