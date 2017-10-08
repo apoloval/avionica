@@ -1,0 +1,354 @@
+EESchema Schematic File Version 2
+LIBS:avionica
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:keyboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title "Avionica IO Controller Board"
+Date "2017/10/08"
+Rev "01"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74922 U5
+U 1 1 59DA5DA8
+P 5300 3550
+AR Path="/59DA4E9D/59DA5DA8" Ref="U5"  Part="1" 
+AR Path="/59DAB210/59DA5DA8" Ref="U6"  Part="1" 
+AR Path="/59DAD248/59DA5DA8" Ref="U7"  Part="1" 
+AR Path="/59DAD24E/59DA5DA8" Ref="U8"  Part="1" 
+F 0 "U6" H 5050 4250 60  0000 C CNN
+F 1 "74922" H 5300 3050 60  0000 C CNN
+F 2 "" H 5300 3550 60  0001 C CNN
+F 3 "" H 5300 3550 60  0001 C CNN
+	1    5300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 P7
+U 1 1 59DA5DE5
+P 4250 3500
+AR Path="/59DA4E9D/59DA5DE5" Ref="P7"  Part="1" 
+AR Path="/59DAB210/59DA5DE5" Ref="P9"  Part="1" 
+AR Path="/59DAD248/59DA5DE5" Ref="P11"  Part="1" 
+AR Path="/59DAD24E/59DA5DE5" Ref="P13"  Part="1" 
+F 0 "P9" H 4250 3950 50  0000 C CNN
+F 1 "CONN_01X08" V 4350 3500 50  0000 C CNN
+F 2 "" H 4250 3500 60  0000 C CNN
+F 3 "" H 4250 3500 60  0000 C CNN
+	1    4250 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 59DA6067
+P 4600 2800
+AR Path="/59DA4E9D/59DA6067" Ref="#PWR09"  Part="1" 
+AR Path="/59DAB210/59DA6067" Ref="#PWR013"  Part="1" 
+AR Path="/59DAD248/59DA6067" Ref="#PWR017"  Part="1" 
+AR Path="/59DAD24E/59DA6067" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 4600 2550 50  0001 C CNN
+F 1 "GND" H 4600 2650 50  0000 C CNN
+F 2 "" H 4600 2800 60  0000 C CNN
+F 3 "" H 4600 2800 60  0000 C CNN
+	1    4600 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L CP1_Small C10
+U 1 1 59DA62CB
+P 6200 4150
+AR Path="/59DA4E9D/59DA62CB" Ref="C10"  Part="1" 
+AR Path="/59DAB210/59DA62CB" Ref="C12"  Part="1" 
+AR Path="/59DAD248/59DA62CB" Ref="C14"  Part="1" 
+AR Path="/59DAD24E/59DA62CB" Ref="C16"  Part="1" 
+F 0 "C12" H 6210 4220 50  0000 L CNN
+F 1 "1uF" V 6300 3950 50  0000 L CNN
+F 2 "" H 6200 4150 60  0000 C CNN
+F 3 "" H 6200 4150 60  0000 C CNN
+	1    6200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C9
+U 1 1 59DA62D2
+P 6000 4150
+AR Path="/59DA4E9D/59DA62D2" Ref="C9"  Part="1" 
+AR Path="/59DAB210/59DA62D2" Ref="C11"  Part="1" 
+AR Path="/59DAD248/59DA62D2" Ref="C13"  Part="1" 
+AR Path="/59DAD24E/59DA62D2" Ref="C15"  Part="1" 
+F 0 "C11" H 6010 4220 50  0000 L CNN
+F 1 "100nF" V 5850 4000 50  0000 L CNN
+F 2 "" H 6000 4150 60  0000 C CNN
+F 3 "" H 6000 4150 60  0000 C CNN
+	1    6000 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 59DA630F
+P 6100 4450
+AR Path="/59DA4E9D/59DA630F" Ref="#PWR010"  Part="1" 
+AR Path="/59DAB210/59DA630F" Ref="#PWR014"  Part="1" 
+AR Path="/59DAD248/59DA630F" Ref="#PWR018"  Part="1" 
+AR Path="/59DAD24E/59DA630F" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 6100 4200 50  0001 C CNN
+F 1 "GND" H 6100 4300 50  0000 C CNN
+F 2 "" H 6100 4450 60  0000 C CNN
+F 3 "" H 6100 4450 60  0000 C CNN
+	1    6100 4450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5750 3400
+Text HLabel 7250 3000 2    60   Output ~ 0
+A
+Text HLabel 7250 3100 2    60   Output ~ 0
+B
+Text HLabel 7250 3200 2    60   Output ~ 0
+C
+Text HLabel 7250 3300 2    60   Output ~ 0
+D
+$Comp
+L R R2
+U 1 1 59DA6B14
+P 6550 4300
+AR Path="/59DA4E9D/59DA6B14" Ref="R2"  Part="1" 
+AR Path="/59DAB210/59DA6B14" Ref="R6"  Part="1" 
+AR Path="/59DAD248/59DA6B14" Ref="R10"  Part="1" 
+AR Path="/59DAD24E/59DA6B14" Ref="R14"  Part="1" 
+F 0 "R6" V 6500 4150 50  0000 C CNN
+F 1 "10K" V 6550 4300 50  0000 C CNN
+F 2 "" V 6480 4300 30  0000 C CNN
+F 3 "" H 6550 4300 30  0000 C CNN
+	1    6550 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 59DA6BD4
+P 6750 4300
+AR Path="/59DA4E9D/59DA6BD4" Ref="R3"  Part="1" 
+AR Path="/59DAB210/59DA6BD4" Ref="R7"  Part="1" 
+AR Path="/59DAD248/59DA6BD4" Ref="R11"  Part="1" 
+AR Path="/59DAD24E/59DA6BD4" Ref="R15"  Part="1" 
+F 0 "R7" V 6700 4150 50  0000 C CNN
+F 1 "10K" V 6750 4300 50  0000 C CNN
+F 2 "" V 6680 4300 30  0000 C CNN
+F 3 "" H 6750 4300 30  0000 C CNN
+	1    6750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 59DA6BFA
+P 6950 4300
+AR Path="/59DA4E9D/59DA6BFA" Ref="R4"  Part="1" 
+AR Path="/59DAB210/59DA6BFA" Ref="R8"  Part="1" 
+AR Path="/59DAD248/59DA6BFA" Ref="R12"  Part="1" 
+AR Path="/59DAD24E/59DA6BFA" Ref="R16"  Part="1" 
+F 0 "R8" V 6900 4150 50  0000 C CNN
+F 1 "10K" V 6950 4300 50  0000 C CNN
+F 2 "" V 6880 4300 30  0000 C CNN
+F 3 "" H 6950 4300 30  0000 C CNN
+	1    6950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 59DA6C21
+P 7150 4300
+AR Path="/59DA4E9D/59DA6C21" Ref="R5"  Part="1" 
+AR Path="/59DAB210/59DA6C21" Ref="R9"  Part="1" 
+AR Path="/59DAD248/59DA6C21" Ref="R13"  Part="1" 
+AR Path="/59DAD24E/59DA6C21" Ref="R17"  Part="1" 
+F 0 "R9" V 7100 4150 50  0000 C CNN
+F 1 "10K" V 7150 4300 50  0000 C CNN
+F 2 "" V 7080 4300 30  0000 C CNN
+F 3 "" H 7150 4300 30  0000 C CNN
+	1    7150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR011
+U 1 1 59DA6C4D
+P 6850 2100
+AR Path="/59DA4E9D/59DA6C4D" Ref="#PWR011"  Part="1" 
+AR Path="/59DAB210/59DA6C4D" Ref="#PWR015"  Part="1" 
+AR Path="/59DAD248/59DA6C4D" Ref="#PWR019"  Part="1" 
+AR Path="/59DAD24E/59DA6C4D" Ref="#PWR023"  Part="1" 
+F 0 "#PWR023" H 6850 1950 50  0001 C CNN
+F 1 "VCC" H 6850 2250 50  0000 C CNN
+F 2 "" H 6850 2100 60  0000 C CNN
+F 3 "" H 6850 2100 60  0000 C CNN
+	1    6850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X04 P8
+U 1 1 59DA6D41
+P 6850 2550
+AR Path="/59DA4E9D/59DA6D41" Ref="P8"  Part="1" 
+AR Path="/59DAB210/59DA6D41" Ref="P10"  Part="1" 
+AR Path="/59DAD248/59DA6D41" Ref="P12"  Part="1" 
+AR Path="/59DAD24E/59DA6D41" Ref="P14"  Part="1" 
+F 0 "P10" H 6850 2800 50  0000 C CNN
+F 1 "CONN_02X04" H 6850 2300 50  0000 C CNN
+F 2 "" H 6850 1350 60  0000 C CNN
+F 3 "" H 6850 1350 60  0000 C CNN
+	1    6850 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 59DA70C6
+P 6850 4700
+AR Path="/59DA4E9D/59DA70C6" Ref="#PWR012"  Part="1" 
+AR Path="/59DAB210/59DA70C6" Ref="#PWR016"  Part="1" 
+AR Path="/59DAD248/59DA70C6" Ref="#PWR020"  Part="1" 
+AR Path="/59DAD24E/59DA70C6" Ref="#PWR024"  Part="1" 
+F 0 "#PWR024" H 6850 4450 50  0001 C CNN
+F 1 "GND" H 6850 4550 50  0000 C CNN
+F 2 "" H 6850 4700 60  0000 C CNN
+F 3 "" H 6850 4700 60  0000 C CNN
+	1    6850 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2800 4600 3000
+Wire Wire Line
+	4600 3000 4800 3000
+Wire Wire Line
+	4800 3150 4450 3150
+Wire Wire Line
+	4450 3250 4800 3250
+Wire Wire Line
+	4800 3350 4450 3350
+Wire Wire Line
+	4450 3450 4800 3450
+Wire Wire Line
+	4800 3550 4450 3550
+Wire Wire Line
+	4450 3650 4800 3650
+Wire Wire Line
+	4800 3750 4450 3750
+Wire Wire Line
+	4450 3850 4800 3850
+Wire Wire Line
+	6000 4350 6000 4250
+Wire Wire Line
+	6200 4350 6200 4250
+Wire Wire Line
+	6200 3650 6200 4050
+Wire Wire Line
+	6000 3750 6000 4050
+Wire Wire Line
+	5750 3650 6200 3650
+Wire Wire Line
+	6000 3750 5750 3750
+Wire Wire Line
+	6000 4350 6200 4350
+Wire Wire Line
+	6100 4350 6100 4450
+Connection ~ 6100 4350
+Wire Wire Line
+	6850 2100 6850 2200
+Wire Wire Line
+	6700 2200 7000 2200
+Wire Wire Line
+	6700 2200 6700 2300
+Wire Wire Line
+	6700 2800 6700 3700
+Wire Wire Line
+	6700 3700 6550 3700
+Wire Wire Line
+	6550 3700 6550 4150
+Wire Wire Line
+	7000 2800 7000 3700
+Wire Wire Line
+	7000 3700 7150 3700
+Wire Wire Line
+	7150 3700 7150 4150
+Wire Wire Line
+	6900 2800 6900 3800
+Wire Wire Line
+	6900 3800 6950 3800
+Wire Wire Line
+	6950 3800 6950 4150
+Wire Wire Line
+	6800 2800 6800 3800
+Wire Wire Line
+	6800 3800 6750 3800
+Wire Wire Line
+	6750 3800 6750 4150
+Wire Wire Line
+	6550 4450 6550 4600
+Wire Wire Line
+	6550 4600 7150 4600
+Wire Wire Line
+	7150 4600 7150 4450
+Wire Wire Line
+	6850 4700 6850 4600
+Connection ~ 6850 4600
+Wire Wire Line
+	6750 4450 6750 4600
+Connection ~ 6750 4600
+Wire Wire Line
+	6950 4450 6950 4600
+Connection ~ 6950 4600
+Wire Wire Line
+	5750 3000 7250 3000
+Connection ~ 7000 3000
+Wire Wire Line
+	5750 3100 7250 3100
+Connection ~ 6900 3100
+Wire Wire Line
+	5750 3200 7250 3200
+Connection ~ 6800 3200
+Wire Wire Line
+	5750 3300 7250 3300
+Connection ~ 6700 3300
+Wire Wire Line
+	7000 2200 7000 2300
+Connection ~ 6850 2200
+Wire Wire Line
+	6900 2300 6900 2200
+Connection ~ 6900 2200
+Wire Wire Line
+	6800 2300 6800 2200
+Connection ~ 6800 2200
+$EndSCHEMATC
