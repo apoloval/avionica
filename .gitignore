@@ -10,3 +10,4 @@ _autosave*
 *.cf
 *.vcd
 *_tb
+*.net
