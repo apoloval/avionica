@@ -1,8 +1,8 @@
-(module Jack_55_21 (layer F.Cu) (tedit 586E76F4)
-  (fp_text reference P2 (at -9 -10.3) (layer F.SilkS)
+(module Jack_55_21 (layer F.Cu) (tedit 59DE58A3)
+  (fp_text reference P3 (at -9.525 -7.62) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value CONN_01X03 (at 0 4.445) (layer F.Fab)
+  (fp_text value CONN_01X03 (at 0 -3.81) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start -11 -4.7) (end -11 -9.4) (layer F.SilkS) (width 0.15))

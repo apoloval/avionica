@@ -1,8 +1,8 @@
-(module idc-8p (layer F.Cu) (tedit 5873D8C6)
-  (fp_text reference P1 (at 1.27 -6.35) (layer F.SilkS)
+(module idc-8p (layer F.Cu) (tedit 59DE5271)
+  (fp_text reference P2 (at 4.445 13.335) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value CONN_02X04 (at 1.27 13.97) (layer F.Fab)
+  (fp_text value CONN_01X08 (at -1.905 6.985 90) (layer F.Fab) hide
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start -3.2 2.6) (end -3.2 -5.1) (layer F.SilkS) (width 0.15))
