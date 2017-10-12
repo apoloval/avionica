@@ -1,7 +1,7 @@
-(module Disc_capacitor (layer F.Cu) (tedit 59DE53DE)
+(module Disc_capacitor locked (layer F.Cu) (tedit 59DE540D)
   (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=10*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
   (tags "C Disc series Radial pin pitch 5.00mm  diameter 10mm width 2.5mm Capacitor")
-  (fp_text reference C8 (at 2.54 0 180) (layer F.SilkS)
+  (fp_text reference C1 (at 2.54 0 180) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value 100nF (at 2.54 0) (layer F.Fab) hide
@@ -21,7 +21,7 @@
   (fp_line (start 7.85 -1.6) (end -2.85 -1.6) (layer F.CrtYd) (width 0.05))
   (pad 1 thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask))
   (pad 2 thru_hole circle (at 5 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask))
-  (model ${KIPRJMOD}/../../modules/packages3d/avionica.3dshapes/Disc_capacitor.wrl
+  (model ${KIPRJMOD}/../modules/packages3d/avionica.3dshapes/Disc_capacitor.wrl
     (at (xyz 0.1 0 0))
     (scale (xyz 0.65 0.65 0.65))
     (rotate (xyz 0 0 0))
