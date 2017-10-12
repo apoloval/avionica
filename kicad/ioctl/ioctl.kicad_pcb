@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
-    (links 130)
+    (links 0)
     (no_connects 130)
-    (area 176.229999 31.194999 231.440001 116.135)
+    (area 175.159999 30.379999 232.510001 116.940001)
     (thickness 1.6)
     (drawings 4)
     (tracks 0)
     (zones 0)
-    (modules 33)
+    (modules 37)
     (nets 62)
   )
 
@@ -872,7 +872,7 @@
     )
   )
 
-  (module avionica:Disc_capacitor (layer F.Cu) (tedit 59DE540D) (tstamp 59DBBE19)
+  (module avionica:Disc_capacitor locked (layer F.Cu) (tedit 59DE540D) (tstamp 59DBBE19)
     (at 188.595 33.02)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=10*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 10mm width 2.5mm Capacitor")
@@ -1896,6 +1896,66 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
+  )
+
+  (module avionica:MountingHole_M3 (layer F.Cu) (tedit 59DF3046) (tstamp 59DF3C56)
+    (at 180.34 35.56)
+    (descr "Mounting Hole 3.2mm, no annular, M3")
+    (tags "mounting hole 3.2mm no annular m3")
+    (fp_text reference REF** (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Hole (at 0 1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
+    (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
+    (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+  )
+
+  (module avionica:MountingHole_M3 (layer F.Cu) (tedit 59DF3046) (tstamp 59DF3C61)
+    (at 227.33 35.56)
+    (descr "Mounting Hole 3.2mm, no annular, M3")
+    (tags "mounting hole 3.2mm no annular m3")
+    (fp_text reference REF** (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Hole (at 0 1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
+    (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
+    (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+  )
+
+  (module avionica:MountingHole_M3 (layer F.Cu) (tedit 59DF3046) (tstamp 59DF3C6A)
+    (at 180.34 111.76)
+    (descr "Mounting Hole 3.2mm, no annular, M3")
+    (tags "mounting hole 3.2mm no annular m3")
+    (fp_text reference REF** (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Hole (at 0 1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
+    (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
+    (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
+  )
+
+  (module avionica:MountingHole_M3 (layer F.Cu) (tedit 59DF3046) (tstamp 59DF3C73)
+    (at 227.33 111.76)
+    (descr "Mounting Hole 3.2mm, no annular, M3")
+    (tags "mounting hole 3.2mm no annular m3")
+    (fp_text reference REF** (at 0 -1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Hole (at 0 1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
+    (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
+    (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )
 
   (gr_line (start 175.26 116.84) (end 175.26 30.48) (angle 90) (layer Margin) (width 0.2))
