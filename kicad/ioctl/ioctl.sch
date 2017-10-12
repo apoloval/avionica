@@ -283,28 +283,6 @@ F 3 "" H 4100 6900 60  0000 C CNN
 	1    4100 6900
 	1    0    0    -1  
 $EndComp
-$Comp
-L C_Small C11
-U 1 1 59DA6BD6
-P 4300 6900
-F 0 "C11" V 4350 6950 50  0000 L CNN
-F 1 "100nF" V 4350 6600 50  0000 L CNN
-F 2 "avionica:Disc_capacitor" H 4300 6900 60  0001 C CNN
-F 3 "" H 4300 6900 60  0000 C CNN
-	1    4300 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L C_Small C12
-U 1 1 59DA6BDC
-P 4500 6900
-F 0 "C12" V 4550 6950 50  0000 L CNN
-F 1 "100nF" V 4550 6600 50  0000 L CNN
-F 2 "avionica:Disc_capacitor" H 4500 6900 60  0001 C CNN
-F 3 "" H 4500 6900 60  0000 C CNN
-	1    4500 6900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2950 6500 2950 6850
 Wire Wire Line
@@ -395,10 +373,6 @@ Wire Wire Line
 Wire Wire Line
 	7400 4000 7400 4250
 Wire Wire Line
-	4500 6600 4500 6800
-Wire Wire Line
-	4500 7250 4500 7000
-Wire Wire Line
 	3100 6800 3100 6600
 Connection ~ 3100 6600
 Wire Wire Line
@@ -415,10 +389,6 @@ Wire Wire Line
 Connection ~ 3900 6600
 Wire Wire Line
 	4100 6800 4100 6600
-Connection ~ 4100 6600
-Wire Wire Line
-	4300 6800 4300 6600
-Connection ~ 4300 6600
 Wire Wire Line
 	3100 7000 3100 7250
 Connection ~ 3100 7250
@@ -436,10 +406,6 @@ Wire Wire Line
 Connection ~ 3900 7250
 Wire Wire Line
 	4100 7000 4100 7250
-Connection ~ 4100 7250
-Wire Wire Line
-	4300 7000 4300 7250
-Connection ~ 4300 7250
 Wire Wire Line
 	5400 1650 5500 1650
 Wire Wire Line
@@ -595,12 +561,12 @@ $Comp
 L CP1_Small C6
 U 1 1 59DE2D33
 P 3600 3350
-F 0 "C6" V 3650 3450 50  0000 L CNN
-F 1 "1uF" V 3550 3450 50  0000 L CNN
+F 0 "C6" V 3650 3150 50  0000 L CNN
+F 1 "1uF" V 3550 3100 50  0000 L CNN
 F 2 "avionica:Radial_capacitor" H 3600 3350 60  0001 C CNN
 F 3 "" H 3600 3350 60  0000 C CNN
 	1    3600 3350
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L C_Small C7
@@ -703,12 +669,12 @@ $Comp
 L CP1_Small C4
 U 1 1 59DE5132
 P 3600 2100
-F 0 "C4" V 3650 2200 50  0000 L CNN
-F 1 "1uF" V 3550 2200 50  0000 L CNN
+F 0 "C4" V 3650 1900 50  0000 L CNN
+F 1 "1uF" V 3550 1850 50  0000 L CNN
 F 2 "avionica:Radial_capacitor" H 3600 2100 60  0001 C CNN
 F 3 "" H 3600 2100 60  0000 C CNN
 	1    3600 2100
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L C_Small C5
@@ -1083,7 +1049,7 @@ Wire Wire Line
 Connection ~ 9200 2250
 NoConn ~ 8450 1650
 Wire Wire Line
-	4500 6600 2600 6600
+	4100 6600 2600 6600
 Wire Wire Line
-	2600 7250 4500 7250
+	4100 7250 2600 7250
 $EndSCHEMATC
