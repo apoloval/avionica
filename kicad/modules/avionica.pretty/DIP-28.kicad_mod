@@ -1,10 +1,10 @@
-(module DIP-28 (layer F.Cu) (tedit 59F085DC)
+(module DIP-28 (layer F.Cu) (tedit 59F09B4C)
   (descr "28-lead dip package, row spacing 7.62 mm (300 mils)")
   (tags "dil dip 2.54 300")
-  (fp_text reference REF** (at 0 -5.22) (layer F.SilkS)
+  (fp_text reference U1 (at 3.81 34.29) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (fp_text value DIP28 (at 0 -3.72) (layer F.Fab)
+  (fp_text value ATmega328 (at 3.81 16.51 90) (layer F.Fab)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_line (start -1.05 -2.45) (end -1.05 35.5) (layer F.CrtYd) (width 0.05))
@@ -46,7 +46,7 @@
   (pad 26 thru_hole oval (at 7.62 5.08) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask))
   (pad 27 thru_hole oval (at 7.62 2.54) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask))
   (pad 28 thru_hole oval (at 7.62 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask))
-  (model Housings_DIP.3dshapes/DIP-28_W7.62mm.wrl
+  (model ${KIPRJMOD}/../modules/packages3d/avionica.3dshapes/DIP-28.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
