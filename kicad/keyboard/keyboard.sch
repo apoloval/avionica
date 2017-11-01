@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:keyboard-rescue
 LIBS:avionica
 LIBS:power
 LIBS:device
@@ -187,7 +186,6 @@ Wire Wire Line
 NoConn ~ 4900 3400
 NoConn ~ 4900 3500
 NoConn ~ 4900 3600
-NoConn ~ 4900 3700
 $Comp
 L CONN06 P2
 U 1 1 59F07DD2
@@ -210,23 +208,16 @@ Wire Wire Line
 $Comp
 L GND #PWR03
 U 1 1 59F0800E
-P 6550 3200
-F 0 "#PWR03" H 6550 2950 50  0001 C CNN
-F 1 "GND" H 6550 3050 50  0000 C CNN
-F 2 "" H 6550 3200 60  0000 C CNN
-F 3 "" H 6550 3200 60  0000 C CNN
-	1    6550 3200
+P 6600 3200
+F 0 "#PWR03" H 6600 2950 50  0001 C CNN
+F 1 "GND" H 6600 3050 50  0000 C CNN
+F 2 "" H 6600 3200 60  0000 C CNN
+F 3 "" H 6600 3200 60  0000 C CNN
+	1    6600 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 3200 6550 3100
-Wire Wire Line
-	6500 3100 6600 3100
-Wire Wire Line
-	6500 3100 6500 3000
-Wire Wire Line
-	6600 3100 6600 3000
-Connection ~ 6550 3100
+	6600 3000 6600 3200
 $Comp
 L VCC #PWR04
 U 1 1 59F08205
@@ -459,4 +450,8 @@ Wire Wire Line
 Wire Wire Line
 	2750 2900 2950 2900
 Connection ~ 2750 3200
+Wire Wire Line
+	4900 3700 6500 3700
+Wire Wire Line
+	6500 3700 6500 3000
 $EndSCHEMATC
