@@ -7,6 +7,9 @@
 #include <Arduino.h>
 #include <SPI.h>
 
+#define VERSION_MAJOR 0
+#define VERSION_MINOR 1
+
 #define SERIAL_BPS 9600
 
 #define MAX_PORTS         128
@@ -180,9 +183,20 @@ void spi_scan() {
 
 /**********************************************************************************/
 
+byte serial_conn_header[] = { 'A', 'V', 'I', 'O', 'N', 'I', 'C', 'A' };
+
 /* Setup the serial interface. */
 void serial_setup() {
   Serial.begin(SERIAL_BPS);
+}
+
+/* Send a connection header to the computer. */
+void serial_write_conn_header() {
+  for (int i = 0; i < sizeof(serial_conn_header); i++) {
+    Serial.write(serial_conn_header[i]);
+  }
+  Serial.write(VERSION_MAJOR);
+  Serial.write(VERSION_MINOR);
 }
 
 /* Read a message from serial interface, returning true if there was one. */
@@ -210,6 +224,8 @@ void setup() {
   port_setup();
   spi_setup();
   serial_setup();
+
+  serial_write_conn_header();
 }
 
 /* Arduino base loop function. */
