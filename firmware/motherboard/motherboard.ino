@@ -214,7 +214,7 @@ bool serial_read(message& msg) {
     return false;
   }
   msg.port = Serial.read();
-  msg.value = (word(0) & Serial.read()) << 8;
+  msg.value = word(Serial.read()) << 8;
   msg.value |= Serial.read();
   return true;
 }
