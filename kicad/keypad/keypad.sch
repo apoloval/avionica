@@ -36,7 +36,7 @@ encoding utf-8
 Sheet 1 1
 Title "Avionica Keypad Controller "
 Date "2017-10-25"
-Rev "01"
+Rev "02"
 Comp ""
 Comment1 ""
 Comment2 ""

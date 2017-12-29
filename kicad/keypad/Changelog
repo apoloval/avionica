@@ -1,0 +1,5 @@
+Rev02:
+ - Fix too small holes for IDC connectors (set to 0.8mm drills)
+ - Use 100nF labels instead of 0.1uF for decoupling capacitors
+Rev01:
+ - First release
