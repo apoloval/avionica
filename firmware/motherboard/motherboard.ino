@@ -1,5 +1,5 @@
 /* 
- * Avionica Arduino firmware
+ * Avionica Motherboard firmware
  * 
  * Copyright (C) 2017 Alvaro Polo
  */
