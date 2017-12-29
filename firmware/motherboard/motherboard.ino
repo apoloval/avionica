@@ -109,6 +109,12 @@ void port_disable(byte port) {
 
 /**********************************************************************************/
 
+SPISettings spi_settings = SPISettings(
+  2000000, // 2Mhz 
+  MSBFIRST, // Most-significant bit first
+  SPI_MODE0
+);
+
 /* Settings for a SPI device */
 struct spi_device {
   int pin_sdav;
@@ -159,11 +165,14 @@ void spi_disable(byte port) {
 word spi_exchange(byte port, word output) {
   if (port < SPI_DEVICE_COUNT) {
     word input = 0;
+    SPI.beginTransaction(spi_settings);
     digitalWrite(spi_devices[port].pin_ss, LOW);
     input |= SPI.transfer(output >> 8) << 8;
-    delayMicroseconds(20); // Must give time to slave to read first byte
+    delayMicroseconds(20); // Must give time to slave to read first byte (20us == 320 cycles @ 16Mhz)
     input |= SPI.transfer(output);
     digitalWrite(spi_devices[port].pin_ss, HIGH);
+    SPI.endTransaction();
+
     return input;
   }
   return 0;
