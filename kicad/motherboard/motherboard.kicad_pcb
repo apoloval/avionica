@@ -247,10 +247,10 @@
     (add_net GND)
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48DF71)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E849) (tstamp 5A48DF71)
     (at 130.81 148.59 180)
     (path /5A491024)
-    (fp_text reference P30 (at -1.905 -3.81 180) (layer F.SilkS)
+    (fp_text reference P29 (at -1.905 -3.81 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 270) (layer F.Fab) hide
@@ -281,10 +281,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48DA7D)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E825) (tstamp 5A48DA7D)
     (at 123.19 81.28 90)
     (path /5A48F827)
-    (fp_text reference P23 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P22 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -493,10 +493,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC33)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7A8) (tstamp 5A48AC33)
     (at 172.72 97.79 90)
     (path /5A48BEB2)
-    (fp_text reference P1 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P0 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -527,10 +527,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC3C)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7AE) (tstamp 5A48AC3C)
     (at 156.21 97.79 90)
     (path /5A48C566)
-    (fp_text reference P2 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P1 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -561,10 +561,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC45)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7B5) (tstamp 5A48AC45)
     (at 139.7 97.79 90)
     (path /5A48C5A6)
-    (fp_text reference P3 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P2 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -595,10 +595,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC4E)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7BB) (tstamp 5A48AC4E)
     (at 123.19 97.79 90)
     (path /5A48C5D8)
-    (fp_text reference P4 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P3 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -629,10 +629,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC57)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7C0) (tstamp 5A48AC57)
     (at 106.68 97.79 90)
     (path /5A48CD44)
-    (fp_text reference P5 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P4 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -663,10 +663,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC60)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7C7) (tstamp 5A48AC60)
     (at 172.72 108.585 90)
     (path /5A48CD5E)
-    (fp_text reference P6 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P5 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -697,10 +697,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC69)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7CD) (tstamp 5A48AC69)
     (at 172.72 81.28 90)
     (path /5A48CD78)
-    (fp_text reference P7 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P6 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -731,10 +731,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC72)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7D4) (tstamp 5A48AC72)
     (at 139.7 108.585 90)
     (path /5A48CD92)
-    (fp_text reference P8 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P7 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -765,10 +765,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC7B)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7D9) (tstamp 5A48AC7B)
     (at 123.19 108.585 90)
     (path /5A48CFE2)
-    (fp_text reference P9 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P8 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -799,10 +799,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC84)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7E0) (tstamp 5A48AC84)
     (at 106.68 108.585 90)
     (path /5A48CFFC)
-    (fp_text reference P10 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P9 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -833,10 +833,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC8D)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7E7) (tstamp 5A48AC8D)
     (at 172.72 119.38 90)
     (path /5A48D016)
-    (fp_text reference P11 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P10 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -867,10 +867,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC96)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7ED) (tstamp 5A48AC96)
     (at 156.21 119.38 90)
     (path /5A48D030)
-    (fp_text reference P12 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P11 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -901,10 +901,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48AC9F)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7F3) (tstamp 5A48AC9F)
     (at 139.7 119.38 90)
     (path /5A48D24A)
-    (fp_text reference P13 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P12 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -935,10 +935,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48ACA8)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7F7) (tstamp 5A48ACA8)
     (at 123.19 119.38 90)
     (path /5A48D264)
-    (fp_text reference P14 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P13 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -969,10 +969,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48ACBA)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E7FD) (tstamp 5A48ACBA)
     (at 106.68 119.38 90)
     (path /5A48D27E)
-    (fp_text reference P15 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P14 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -1003,10 +1003,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48ACC4)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E887) (tstamp 5A48ACC4)
     (at 172.72 130.175 90)
     (path /5A48D298)
-    (fp_text reference P16 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P15 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -1037,10 +1037,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48ACCE)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E807) (tstamp 5A48ACCE)
     (at 156.21 130.175 90)
     (path /5A48D510)
-    (fp_text reference P17 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P16 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -1071,10 +1071,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48ACD8)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E80B) (tstamp 5A48ACD8)
     (at 139.7 130.175 90)
     (path /5A48D52A)
-    (fp_text reference P18 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P17 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -1105,10 +1105,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48ACE2)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E811) (tstamp 5A48ACE2)
     (at 123.19 130.175 90)
     (path /5A48D544)
-    (fp_text reference P19 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P18 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -1139,10 +1139,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48ACEC)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E815) (tstamp 5A48ACEC)
     (at 106.68 130.175 90)
     (path /5A48D55E)
-    (fp_text reference P20 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P19 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -1173,10 +1173,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48DA69)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E81C) (tstamp 5A48DA69)
     (at 156.21 81.28 90)
     (path /5A48F7F3)
-    (fp_text reference P21 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P20 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -1207,10 +1207,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48DA73)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E821) (tstamp 5A48DA73)
     (at 139.7 81.28 90)
     (path /5A48F80D)
-    (fp_text reference P22 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P21 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -1241,10 +1241,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48DA87)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E829) (tstamp 5A48DA87)
     (at 106.68 81.28 90)
     (path /5A48F841)
-    (fp_text reference P24 (at -1.905 -3.81 90) (layer F.SilkS)
+    (fp_text reference P23 (at -1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 180) (layer F.Fab) hide
@@ -1275,10 +1275,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48DF3F)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E830) (tstamp 5A48DF3F)
     (at 184.785 148.59 180)
     (path /5A490F15)
-    (fp_text reference P25 (at -1.905 -3.81 180) (layer F.SilkS)
+    (fp_text reference P24 (at -1.905 -3.81 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 270) (layer F.Fab) hide
@@ -1309,10 +1309,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48DF49)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E836) (tstamp 5A48DF49)
     (at 173.99 148.59 180)
     (path /5A490F2F)
-    (fp_text reference P26 (at -1.905 -3.81 180) (layer F.SilkS)
+    (fp_text reference P25 (at -1.905 -3.81 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 270) (layer F.Fab) hide
@@ -1343,10 +1343,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48DF53)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E83A) (tstamp 5A48DF53)
     (at 163.195 148.59 180)
     (path /5A490F49)
-    (fp_text reference P27 (at -1.905 -3.81 180) (layer F.SilkS)
+    (fp_text reference P26 (at -1.905 -3.81 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 270) (layer F.Fab) hide
@@ -1377,10 +1377,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48DF5D)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E83E) (tstamp 5A48DF5D)
     (at 152.4 148.59 180)
     (path /5A490F63)
-    (fp_text reference P28 (at -1.905 -3.81 180) (layer F.SilkS)
+    (fp_text reference P27 (at -1.905 -3.81 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 270) (layer F.Fab) hide
@@ -1411,10 +1411,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48DF67)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E844) (tstamp 5A48DF67)
     (at 141.605 148.59 180)
     (path /5A49100A)
-    (fp_text reference P29 (at -1.905 -3.81 180) (layer F.SilkS)
+    (fp_text reference P28 (at -1.905 -3.81 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 270) (layer F.Fab) hide
@@ -1445,10 +1445,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48DF7B)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E84E) (tstamp 5A48DF7B)
     (at 120.015 148.59 180)
     (path /5A49103E)
-    (fp_text reference P31 (at -1.905 -3.81 180) (layer F.SilkS)
+    (fp_text reference P30 (at -1.905 -3.81 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 270) (layer F.Fab) hide
@@ -1479,10 +1479,10 @@
     )
   )
 
-  (module avionica:idc-6p (layer F.Cu) (tedit 59DE58C8) (tstamp 5A48DF85)
+  (module avionica:idc-6p (layer F.Cu) (tedit 5A48E854) (tstamp 5A48DF85)
     (at 109.22 148.59 180)
     (path /5A491058)
-    (fp_text reference P32 (at -1.905 -3.81 180) (layer F.SilkS)
+    (fp_text reference P31 (at -1.905 -3.81 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN06 (at 1.27 2.54 270) (layer F.Fab) hide
