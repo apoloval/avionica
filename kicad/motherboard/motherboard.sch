@@ -1,0 +1,1935 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:avionica
+LIBS:motherboard-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Avionica Motherboard"
+Date "2017-12-31"
+Rev "01"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Arduino_Mega_Shield SHIELD1
+U 1 1 58406184
+P 8250 3500
+F 0 "SHIELD1" H 7850 6000 60  0000 C CNN
+F 1 "Arduino_Mega_Shield" H 8150 800 60  0000 C CNN
+F 2 "avionica:arduino-mega-shield" H 8250 3500 60  0001 C CNN
+F 3 "" H 8250 3500 60  0000 C CNN
+	1    8250 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 9500 2550 2    40   Output ~ 0
+P0.DAV
+Text GLabel 9500 2450 2    40   Output ~ 0
+P0.SS
+Text GLabel 6900 5850 0    40   Output ~ 0
+P14.SS
+Text GLabel 6900 5950 0    40   Output ~ 0
+P14.DAV
+$Comp
+L GND #PWR19
+U 1 1 58409B8E
+P 6150 4250
+F 0 "#PWR19" H 6150 4000 50  0001 C CNN
+F 1 "GND" H 6150 4100 50  0000 C CNN
+F 2 "" H 6150 4250 50  0000 C CNN
+F 3 "" H 6150 4250 50  0000 C CNN
+	1    6150 4250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9150 2650
+NoConn ~ 9150 2750
+NoConn ~ 7250 1550
+NoConn ~ 7250 1650
+$Comp
+L GND #PWR5
+U 1 1 5840A455
+P 9950 1300
+F 0 "#PWR5" H 9950 1050 50  0001 C CNN
+F 1 "GND" H 9950 1150 50  0000 C CNN
+F 2 "" H 9950 1300 50  0000 C CNN
+F 3 "" H 9950 1300 50  0000 C CNN
+	1    9950 1300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9150 1150
+Wire Wire Line
+	9150 2550 9500 2550
+Wire Wire Line
+	9150 2450 9500 2450
+Wire Wire Line
+	9150 4150 9500 4150
+Wire Wire Line
+	9500 4250 9150 4250
+Wire Wire Line
+	9150 4350 9500 4350
+Wire Wire Line
+	9500 4450 9150 4450
+Wire Wire Line
+	9150 4550 9500 4550
+Wire Wire Line
+	9500 4650 9150 4650
+Wire Wire Line
+	9150 4750 9500 4750
+Wire Wire Line
+	9500 4850 9150 4850
+Wire Wire Line
+	6900 4450 7250 4450
+Wire Wire Line
+	7250 4550 6900 4550
+Wire Wire Line
+	6900 4650 7250 4650
+Wire Wire Line
+	9150 1650 9500 1650
+Wire Wire Line
+	9500 1550 9150 1550
+Wire Wire Line
+	9150 1450 9500 1450
+Wire Wire Line
+	9500 1350 9150 1350
+Wire Wire Line
+	9150 5700 9500 5700
+Wire Wire Line
+	9500 5600 9150 5600
+Wire Wire Line
+	9150 5500 9500 5500
+Wire Wire Line
+	9500 5400 9150 5400
+Wire Wire Line
+	9150 5300 9500 5300
+Wire Wire Line
+	9500 5200 9150 5200
+Wire Wire Line
+	6150 4100 6150 4250
+Wire Wire Line
+	6150 4100 7250 4100
+Wire Wire Line
+	6150 4200 7250 4200
+Connection ~ 6150 4200
+Wire Wire Line
+	9150 1250 9950 1250
+Wire Wire Line
+	9950 1250 9950 1300
+NoConn ~ 7250 2050
+NoConn ~ 9150 4000
+NoConn ~ 9150 3900
+Wire Wire Line
+	9150 5100 9500 5100
+Wire Wire Line
+	9500 5000 9150 5000
+Wire Wire Line
+	7250 4800 6900 4800
+Wire Wire Line
+	6900 4900 7250 4900
+Wire Wire Line
+	7250 5000 6900 5000
+Wire Wire Line
+	6900 5100 7250 5100
+Wire Wire Line
+	6900 5200 7250 5200
+Wire Wire Line
+	7250 5300 6900 5300
+Wire Wire Line
+	6900 5400 7250 5400
+Wire Wire Line
+	7250 5500 6900 5500
+Wire Wire Line
+	9500 1750 9150 1750
+Wire Wire Line
+	9150 1850 9500 1850
+Wire Wire Line
+	9500 2050 9150 2050
+Wire Wire Line
+	9150 2150 9500 2150
+Wire Wire Line
+	6900 5650 7250 5650
+Wire Wire Line
+	7250 5750 6900 5750
+Wire Wire Line
+	6900 5850 7250 5850
+Wire Wire Line
+	7250 5950 6900 5950
+Text GLabel 9500 2350 2    40   Output ~ 0
+P1.DAV
+Text GLabel 9500 2250 2    40   Output ~ 0
+P1.SS
+Wire Wire Line
+	9150 2350 9500 2350
+Wire Wire Line
+	9150 2250 9500 2250
+Text GLabel 9500 2150 2    40   Output ~ 0
+P2.DAV
+Text GLabel 9500 2050 2    40   Output ~ 0
+P2.SS
+Text GLabel 9500 1850 2    40   Output ~ 0
+P3.DAV
+Text GLabel 9500 1750 2    40   Output ~ 0
+P3.SS
+Text GLabel 9500 1650 2    40   Output ~ 0
+P4.DAV
+Text GLabel 9500 1550 2    40   Output ~ 0
+P4.SS
+Text GLabel 9500 1450 2    40   Output ~ 0
+P5.DAV
+Text GLabel 9500 1350 2    40   Output ~ 0
+P5.SS
+Text GLabel 9500 4150 2    40   Output ~ 0
+P6.DAV
+Text GLabel 9500 4250 2    40   Output ~ 0
+P6.SS
+Text GLabel 9500 4350 2    40   Output ~ 0
+P7.DAV
+Text GLabel 9500 4450 2    40   Output ~ 0
+P7.SS
+Text GLabel 9500 4550 2    40   Output ~ 0
+P8.DAV
+Text GLabel 9500 4650 2    40   Output ~ 0
+P8.SS
+Text GLabel 9500 4750 2    40   Output ~ 0
+P9.DAV
+Text GLabel 9500 4850 2    40   Output ~ 0
+P9.SS
+Text GLabel 9500 5000 2    40   Output ~ 0
+P10.DAV
+Text GLabel 9500 5100 2    40   Output ~ 0
+P10.SS
+Text GLabel 9500 5200 2    40   Output ~ 0
+P11.DAV
+Text GLabel 9500 5300 2    40   Output ~ 0
+P11.SS
+Text GLabel 9500 5400 2    40   Output ~ 0
+P12.DAV
+Text GLabel 9500 5500 2    40   Output ~ 0
+P12.SS
+Text GLabel 9500 5600 2    40   Output ~ 0
+P13.DAV
+Text GLabel 9500 5700 2    40   Output ~ 0
+P13.SS
+Text GLabel 6900 5650 0    40   Output ~ 0
+P15.SS
+Text GLabel 6900 5750 0    40   Output ~ 0
+P15.DAV
+Text GLabel 6900 5400 0    40   Output ~ 0
+P16.SS
+Text GLabel 6900 5500 0    40   Output ~ 0
+P16.DAV
+Text GLabel 6900 5200 0    40   Output ~ 0
+P17.SS
+Text GLabel 6900 5300 0    40   Output ~ 0
+P17.DAV
+Text GLabel 6900 5000 0    40   Output ~ 0
+P18.SS
+Text GLabel 6900 5100 0    40   Output ~ 0
+P18.DAV
+Text GLabel 6900 4800 0    40   Output ~ 0
+P19.SS
+Text GLabel 6900 4900 0    40   Output ~ 0
+P19.DAV
+Text GLabel 6900 4550 0    40   Output ~ 0
+MOSI
+Text GLabel 6900 4650 0    40   Input ~ 0
+MISO
+Text GLabel 6900 4450 0    40   Output ~ 0
+SCK
+NoConn ~ 7250 1750
+$Comp
+L CONN06 P1
+U 1 1 5A48BEB2
+P 1750 850
+F 0 "P1" H 1750 1200 50  0000 C CNN
+F 1 "CONN06" V 1850 850 50  0001 C CNN
+F 2 "avionica:idc-6p" H 1750 850 60  0001 C CNN
+F 3 "" H 1750 850 60  0000 C CNN
+	1    1750 850 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR10
+U 1 1 5A48C118
+P 6250 2100
+F 0 "#PWR10" H 6250 1850 50  0001 C CNN
+F 1 "GND" H 6250 1950 50  0000 C CNN
+F 2 "" H 6250 2100 60  0000 C CNN
+F 3 "" H 6250 2100 60  0000 C CNN
+	1    6250 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1850 7250 1850
+Wire Wire Line
+	6250 1550 6250 2100
+Wire Wire Line
+	6250 1950 7250 1950
+Connection ~ 6250 1950
+$Comp
+L PWR_FLAG #FLG1
+U 1 1 5A48C1A3
+P 6250 1550
+F 0 "#FLG1" H 6250 1645 50  0001 C CNN
+F 1 "PWR_FLAG" H 6250 1730 50  0000 C CNN
+F 2 "" H 6250 1550 60  0000 C CNN
+F 3 "" H 6250 1550 60  0000 C CNN
+	1    6250 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 1850
+$Comp
+L GND #PWR1
+U 1 1 5A48C2A2
+P 2100 1200
+F 0 "#PWR1" H 2100 950 50  0001 C CNN
+F 1 "GND" H 2100 1050 50  0000 C CNN
+F 2 "" H 2100 1200 50  0000 C CNN
+F 3 "" H 2100 1200 50  0000 C CNN
+	1    2100 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1050 2000 1100
+Wire Wire Line
+	2000 1100 2100 1100
+Wire Wire Line
+	2100 1100 2100 1200
+Text GLabel 1500 1200 3    40   Input ~ 0
+SCK
+Text GLabel 1600 1200 3    40   Output ~ 0
+MISO
+Text GLabel 1700 1200 3    40   Input ~ 0
+MOSI
+Text GLabel 1800 1200 3    40   Input ~ 0
+P0.SS
+Text GLabel 1900 1200 3    40   Input ~ 0
+P0.DAV
+Wire Wire Line
+	1500 1200 1500 1050
+Wire Wire Line
+	1600 1050 1600 1200
+Wire Wire Line
+	1700 1050 1700 1200
+Wire Wire Line
+	1800 1050 1800 1200
+Wire Wire Line
+	1900 1050 1900 1200
+$Comp
+L CONN06 P2
+U 1 1 5A48C566
+P 2700 850
+F 0 "P2" H 2700 1200 50  0000 C CNN
+F 1 "CONN06" V 2800 850 50  0001 C CNN
+F 2 "avionica:idc-6p" H 2700 850 60  0001 C CNN
+F 3 "" H 2700 850 60  0000 C CNN
+	1    2700 850 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5A48C56D
+P 3050 1200
+F 0 "#PWR2" H 3050 950 50  0001 C CNN
+F 1 "GND" H 3050 1050 50  0000 C CNN
+F 2 "" H 3050 1200 50  0000 C CNN
+F 3 "" H 3050 1200 50  0000 C CNN
+	1    3050 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1050 2950 1100
+Wire Wire Line
+	2950 1100 3050 1100
+Wire Wire Line
+	3050 1100 3050 1200
+Text GLabel 2450 1200 3    40   Input ~ 0
+SCK
+Text GLabel 2550 1200 3    40   Output ~ 0
+MISO
+Text GLabel 2650 1200 3    40   Input ~ 0
+MOSI
+Text GLabel 2750 1200 3    40   Input ~ 0
+P1.SS
+Text GLabel 2850 1200 3    40   Input ~ 0
+P1.DAV
+Wire Wire Line
+	2450 1200 2450 1050
+Wire Wire Line
+	2550 1050 2550 1200
+Wire Wire Line
+	2650 1050 2650 1200
+Wire Wire Line
+	2750 1050 2750 1200
+Wire Wire Line
+	2850 1050 2850 1200
+$Comp
+L CONN06 P3
+U 1 1 5A48C5A6
+P 3650 850
+F 0 "P3" H 3650 1200 50  0000 C CNN
+F 1 "CONN06" V 3750 850 50  0001 C CNN
+F 2 "avionica:idc-6p" H 3650 850 60  0001 C CNN
+F 3 "" H 3650 850 60  0000 C CNN
+	1    3650 850 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 5A48C5AD
+P 4000 1200
+F 0 "#PWR3" H 4000 950 50  0001 C CNN
+F 1 "GND" H 4000 1050 50  0000 C CNN
+F 2 "" H 4000 1200 50  0000 C CNN
+F 3 "" H 4000 1200 50  0000 C CNN
+	1    4000 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1050 3900 1100
+Wire Wire Line
+	3900 1100 4000 1100
+Wire Wire Line
+	4000 1100 4000 1200
+Text GLabel 3400 1200 3    40   Input ~ 0
+SCK
+Text GLabel 3500 1200 3    40   Output ~ 0
+MISO
+Text GLabel 3600 1200 3    40   Input ~ 0
+MOSI
+Text GLabel 3700 1200 3    40   Input ~ 0
+P2.SS
+Text GLabel 3800 1200 3    40   Input ~ 0
+P2.DAV
+Wire Wire Line
+	3400 1200 3400 1050
+Wire Wire Line
+	3500 1050 3500 1200
+Wire Wire Line
+	3600 1050 3600 1200
+Wire Wire Line
+	3700 1050 3700 1200
+Wire Wire Line
+	3800 1050 3800 1200
+$Comp
+L CONN06 P4
+U 1 1 5A48C5D8
+P 4600 850
+F 0 "P4" H 4600 1200 50  0000 C CNN
+F 1 "CONN06" V 4700 850 50  0001 C CNN
+F 2 "avionica:idc-6p" H 4600 850 60  0001 C CNN
+F 3 "" H 4600 850 60  0000 C CNN
+	1    4600 850 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 5A48C5DF
+P 4950 1200
+F 0 "#PWR4" H 4950 950 50  0001 C CNN
+F 1 "GND" H 4950 1050 50  0000 C CNN
+F 2 "" H 4950 1200 50  0000 C CNN
+F 3 "" H 4950 1200 50  0000 C CNN
+	1    4950 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1050 4850 1100
+Wire Wire Line
+	4850 1100 4950 1100
+Wire Wire Line
+	4950 1100 4950 1200
+Text GLabel 4350 1200 3    40   Input ~ 0
+SCK
+Text GLabel 4450 1200 3    40   Output ~ 0
+MISO
+Text GLabel 4550 1200 3    40   Input ~ 0
+MOSI
+Text GLabel 4650 1200 3    40   Input ~ 0
+P3.SS
+Text GLabel 4750 1200 3    40   Input ~ 0
+P3.DAV
+Wire Wire Line
+	4350 1200 4350 1050
+Wire Wire Line
+	4450 1050 4450 1200
+Wire Wire Line
+	4550 1050 4550 1200
+Wire Wire Line
+	4650 1050 4650 1200
+Wire Wire Line
+	4750 1050 4750 1200
+$Comp
+L CONN06 P5
+U 1 1 5A48CD44
+P 1750 1700
+F 0 "P5" H 1750 2050 50  0000 C CNN
+F 1 "CONN06" V 1850 1700 50  0001 C CNN
+F 2 "avionica:idc-6p" H 1750 1700 60  0001 C CNN
+F 3 "" H 1750 1700 60  0000 C CNN
+	1    1750 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 5A48CD4B
+P 2100 2050
+F 0 "#PWR6" H 2100 1800 50  0001 C CNN
+F 1 "GND" H 2100 1900 50  0000 C CNN
+F 2 "" H 2100 2050 50  0000 C CNN
+F 3 "" H 2100 2050 50  0000 C CNN
+	1    2100 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1900 2000 1950
+Wire Wire Line
+	2000 1950 2100 1950
+Wire Wire Line
+	2100 1950 2100 2050
+Text GLabel 1500 2050 3    40   Input ~ 0
+SCK
+Text GLabel 1600 2050 3    40   Output ~ 0
+MISO
+Text GLabel 1700 2050 3    40   Input ~ 0
+MOSI
+Text GLabel 1800 2050 3    40   Input ~ 0
+P4.SS
+Text GLabel 1900 2050 3    40   Input ~ 0
+P4.DAV
+Wire Wire Line
+	1500 2050 1500 1900
+Wire Wire Line
+	1600 1900 1600 2050
+Wire Wire Line
+	1700 1900 1700 2050
+Wire Wire Line
+	1800 1900 1800 2050
+Wire Wire Line
+	1900 1900 1900 2050
+$Comp
+L CONN06 P6
+U 1 1 5A48CD5E
+P 2700 1700
+F 0 "P6" H 2700 2050 50  0000 C CNN
+F 1 "CONN06" V 2800 1700 50  0001 C CNN
+F 2 "avionica:idc-6p" H 2700 1700 60  0001 C CNN
+F 3 "" H 2700 1700 60  0000 C CNN
+	1    2700 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR7
+U 1 1 5A48CD65
+P 3050 2050
+F 0 "#PWR7" H 3050 1800 50  0001 C CNN
+F 1 "GND" H 3050 1900 50  0000 C CNN
+F 2 "" H 3050 2050 50  0000 C CNN
+F 3 "" H 3050 2050 50  0000 C CNN
+	1    3050 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 1900 2950 1950
+Wire Wire Line
+	2950 1950 3050 1950
+Wire Wire Line
+	3050 1950 3050 2050
+Text GLabel 2450 2050 3    40   Input ~ 0
+SCK
+Text GLabel 2550 2050 3    40   Output ~ 0
+MISO
+Text GLabel 2650 2050 3    40   Input ~ 0
+MOSI
+Text GLabel 2750 2050 3    40   Input ~ 0
+P5.SS
+Text GLabel 2850 2050 3    40   Input ~ 0
+P5.DAV
+Wire Wire Line
+	2450 2050 2450 1900
+Wire Wire Line
+	2550 1900 2550 2050
+Wire Wire Line
+	2650 1900 2650 2050
+Wire Wire Line
+	2750 1900 2750 2050
+Wire Wire Line
+	2850 1900 2850 2050
+$Comp
+L CONN06 P7
+U 1 1 5A48CD78
+P 3650 1700
+F 0 "P7" H 3650 2050 50  0000 C CNN
+F 1 "CONN06" V 3750 1700 50  0001 C CNN
+F 2 "avionica:idc-6p" H 3650 1700 60  0001 C CNN
+F 3 "" H 3650 1700 60  0000 C CNN
+	1    3650 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR8
+U 1 1 5A48CD7F
+P 4000 2050
+F 0 "#PWR8" H 4000 1800 50  0001 C CNN
+F 1 "GND" H 4000 1900 50  0000 C CNN
+F 2 "" H 4000 2050 50  0000 C CNN
+F 3 "" H 4000 2050 50  0000 C CNN
+	1    4000 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1900 3900 1950
+Wire Wire Line
+	3900 1950 4000 1950
+Wire Wire Line
+	4000 1950 4000 2050
+Text GLabel 3400 2050 3    40   Input ~ 0
+SCK
+Text GLabel 3500 2050 3    40   Output ~ 0
+MISO
+Text GLabel 3600 2050 3    40   Input ~ 0
+MOSI
+Text GLabel 3700 2050 3    40   Input ~ 0
+P6.SS
+Text GLabel 3800 2050 3    40   Input ~ 0
+P6.DAV
+Wire Wire Line
+	3400 2050 3400 1900
+Wire Wire Line
+	3500 1900 3500 2050
+Wire Wire Line
+	3600 1900 3600 2050
+Wire Wire Line
+	3700 1900 3700 2050
+Wire Wire Line
+	3800 1900 3800 2050
+$Comp
+L CONN06 P8
+U 1 1 5A48CD92
+P 4600 1700
+F 0 "P8" H 4600 2050 50  0000 C CNN
+F 1 "CONN06" V 4700 1700 50  0001 C CNN
+F 2 "avionica:idc-6p" H 4600 1700 60  0001 C CNN
+F 3 "" H 4600 1700 60  0000 C CNN
+	1    4600 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR9
+U 1 1 5A48CD99
+P 4950 2050
+F 0 "#PWR9" H 4950 1800 50  0001 C CNN
+F 1 "GND" H 4950 1900 50  0000 C CNN
+F 2 "" H 4950 2050 50  0000 C CNN
+F 3 "" H 4950 2050 50  0000 C CNN
+	1    4950 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1900 4850 1950
+Wire Wire Line
+	4850 1950 4950 1950
+Wire Wire Line
+	4950 1950 4950 2050
+Text GLabel 4350 2050 3    40   Input ~ 0
+SCK
+Text GLabel 4450 2050 3    40   Output ~ 0
+MISO
+Text GLabel 4550 2050 3    40   Input ~ 0
+MOSI
+Text GLabel 4650 2050 3    40   Input ~ 0
+P7.SS
+Text GLabel 4750 2050 3    40   Input ~ 0
+P7.DAV
+Wire Wire Line
+	4350 2050 4350 1900
+Wire Wire Line
+	4450 1900 4450 2050
+Wire Wire Line
+	4550 1900 4550 2050
+Wire Wire Line
+	4650 1900 4650 2050
+Wire Wire Line
+	4750 1900 4750 2050
+$Comp
+L CONN06 P9
+U 1 1 5A48CFE2
+P 1750 2550
+F 0 "P9" H 1750 2900 50  0000 C CNN
+F 1 "CONN06" V 1850 2550 50  0001 C CNN
+F 2 "avionica:idc-6p" H 1750 2550 60  0001 C CNN
+F 3 "" H 1750 2550 60  0000 C CNN
+	1    1750 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR11
+U 1 1 5A48CFE9
+P 2100 2900
+F 0 "#PWR11" H 2100 2650 50  0001 C CNN
+F 1 "GND" H 2100 2750 50  0000 C CNN
+F 2 "" H 2100 2900 50  0000 C CNN
+F 3 "" H 2100 2900 50  0000 C CNN
+	1    2100 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2750 2000 2800
+Wire Wire Line
+	2000 2800 2100 2800
+Wire Wire Line
+	2100 2800 2100 2900
+Text GLabel 1500 2900 3    40   Input ~ 0
+SCK
+Text GLabel 1600 2900 3    40   Output ~ 0
+MISO
+Text GLabel 1700 2900 3    40   Input ~ 0
+MOSI
+Text GLabel 1800 2900 3    40   Input ~ 0
+P8.SS
+Text GLabel 1900 2900 3    40   Input ~ 0
+P8.DAV
+Wire Wire Line
+	1500 2900 1500 2750
+Wire Wire Line
+	1600 2750 1600 2900
+Wire Wire Line
+	1700 2750 1700 2900
+Wire Wire Line
+	1800 2750 1800 2900
+Wire Wire Line
+	1900 2750 1900 2900
+$Comp
+L CONN06 P10
+U 1 1 5A48CFFC
+P 2700 2550
+F 0 "P10" H 2700 2900 50  0000 C CNN
+F 1 "CONN06" V 2800 2550 50  0001 C CNN
+F 2 "avionica:idc-6p" H 2700 2550 60  0001 C CNN
+F 3 "" H 2700 2550 60  0000 C CNN
+	1    2700 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR12
+U 1 1 5A48D003
+P 3050 2900
+F 0 "#PWR12" H 3050 2650 50  0001 C CNN
+F 1 "GND" H 3050 2750 50  0000 C CNN
+F 2 "" H 3050 2900 50  0000 C CNN
+F 3 "" H 3050 2900 50  0000 C CNN
+	1    3050 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2750 2950 2800
+Wire Wire Line
+	2950 2800 3050 2800
+Wire Wire Line
+	3050 2800 3050 2900
+Text GLabel 2450 2900 3    40   Input ~ 0
+SCK
+Text GLabel 2550 2900 3    40   Output ~ 0
+MISO
+Text GLabel 2650 2900 3    40   Input ~ 0
+MOSI
+Text GLabel 2750 2900 3    40   Input ~ 0
+P9.SS
+Text GLabel 2850 2900 3    40   Input ~ 0
+P9.DAV
+Wire Wire Line
+	2450 2900 2450 2750
+Wire Wire Line
+	2550 2750 2550 2900
+Wire Wire Line
+	2650 2750 2650 2900
+Wire Wire Line
+	2750 2750 2750 2900
+Wire Wire Line
+	2850 2750 2850 2900
+$Comp
+L CONN06 P11
+U 1 1 5A48D016
+P 3650 2550
+F 0 "P11" H 3650 2900 50  0000 C CNN
+F 1 "CONN06" V 3750 2550 50  0001 C CNN
+F 2 "avionica:idc-6p" H 3650 2550 60  0001 C CNN
+F 3 "" H 3650 2550 60  0000 C CNN
+	1    3650 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR13
+U 1 1 5A48D01D
+P 4000 2900
+F 0 "#PWR13" H 4000 2650 50  0001 C CNN
+F 1 "GND" H 4000 2750 50  0000 C CNN
+F 2 "" H 4000 2900 50  0000 C CNN
+F 3 "" H 4000 2900 50  0000 C CNN
+	1    4000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2750 3900 2800
+Wire Wire Line
+	3900 2800 4000 2800
+Wire Wire Line
+	4000 2800 4000 2900
+Text GLabel 3400 2900 3    40   Input ~ 0
+SCK
+Text GLabel 3500 2900 3    40   Output ~ 0
+MISO
+Text GLabel 3600 2900 3    40   Input ~ 0
+MOSI
+Text GLabel 3700 2900 3    40   Input ~ 0
+P10.SS
+Text GLabel 3800 2900 3    40   Input ~ 0
+P10.DAV
+Wire Wire Line
+	3400 2900 3400 2750
+Wire Wire Line
+	3500 2750 3500 2900
+Wire Wire Line
+	3600 2750 3600 2900
+Wire Wire Line
+	3700 2750 3700 2900
+Wire Wire Line
+	3800 2750 3800 2900
+$Comp
+L CONN06 P12
+U 1 1 5A48D030
+P 4600 2550
+F 0 "P12" H 4600 2900 50  0000 C CNN
+F 1 "CONN06" V 4700 2550 50  0001 C CNN
+F 2 "avionica:idc-6p" H 4600 2550 60  0001 C CNN
+F 3 "" H 4600 2550 60  0000 C CNN
+	1    4600 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR14
+U 1 1 5A48D037
+P 4950 2900
+F 0 "#PWR14" H 4950 2650 50  0001 C CNN
+F 1 "GND" H 4950 2750 50  0000 C CNN
+F 2 "" H 4950 2900 50  0000 C CNN
+F 3 "" H 4950 2900 50  0000 C CNN
+	1    4950 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2750 4850 2800
+Wire Wire Line
+	4850 2800 4950 2800
+Wire Wire Line
+	4950 2800 4950 2900
+Text GLabel 4350 2900 3    40   Input ~ 0
+SCK
+Text GLabel 4450 2900 3    40   Output ~ 0
+MISO
+Text GLabel 4550 2900 3    40   Input ~ 0
+MOSI
+Text GLabel 4650 2900 3    40   Input ~ 0
+P11.SS
+Text GLabel 4750 2900 3    40   Input ~ 0
+P11.DAV
+Wire Wire Line
+	4350 2900 4350 2750
+Wire Wire Line
+	4450 2750 4450 2900
+Wire Wire Line
+	4550 2750 4550 2900
+Wire Wire Line
+	4650 2750 4650 2900
+Wire Wire Line
+	4750 2750 4750 2900
+$Comp
+L CONN06 P13
+U 1 1 5A48D24A
+P 1750 3400
+F 0 "P13" H 1750 3750 50  0000 C CNN
+F 1 "CONN06" V 1850 3400 50  0001 C CNN
+F 2 "avionica:idc-6p" H 1750 3400 60  0001 C CNN
+F 3 "" H 1750 3400 60  0000 C CNN
+	1    1750 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR15
+U 1 1 5A48D251
+P 2100 3750
+F 0 "#PWR15" H 2100 3500 50  0001 C CNN
+F 1 "GND" H 2100 3600 50  0000 C CNN
+F 2 "" H 2100 3750 50  0000 C CNN
+F 3 "" H 2100 3750 50  0000 C CNN
+	1    2100 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 3600 2000 3650
+Wire Wire Line
+	2000 3650 2100 3650
+Wire Wire Line
+	2100 3650 2100 3750
+Text GLabel 1500 3750 3    40   Input ~ 0
+SCK
+Text GLabel 1600 3750 3    40   Output ~ 0
+MISO
+Text GLabel 1700 3750 3    40   Input ~ 0
+MOSI
+Text GLabel 1800 3750 3    40   Input ~ 0
+P12.SS
+Text GLabel 1900 3750 3    40   Input ~ 0
+P12.DAV
+Wire Wire Line
+	1500 3750 1500 3600
+Wire Wire Line
+	1600 3600 1600 3750
+Wire Wire Line
+	1700 3600 1700 3750
+Wire Wire Line
+	1800 3600 1800 3750
+Wire Wire Line
+	1900 3600 1900 3750
+$Comp
+L CONN06 P14
+U 1 1 5A48D264
+P 2700 3400
+F 0 "P14" H 2700 3750 50  0000 C CNN
+F 1 "CONN06" V 2800 3400 50  0001 C CNN
+F 2 "avionica:idc-6p" H 2700 3400 60  0001 C CNN
+F 3 "" H 2700 3400 60  0000 C CNN
+	1    2700 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR16
+U 1 1 5A48D26B
+P 3050 3750
+F 0 "#PWR16" H 3050 3500 50  0001 C CNN
+F 1 "GND" H 3050 3600 50  0000 C CNN
+F 2 "" H 3050 3750 50  0000 C CNN
+F 3 "" H 3050 3750 50  0000 C CNN
+	1    3050 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3600 2950 3650
+Wire Wire Line
+	2950 3650 3050 3650
+Wire Wire Line
+	3050 3650 3050 3750
+Text GLabel 2450 3750 3    40   Input ~ 0
+SCK
+Text GLabel 2550 3750 3    40   Output ~ 0
+MISO
+Text GLabel 2650 3750 3    40   Input ~ 0
+MOSI
+Text GLabel 2750 3750 3    40   Input ~ 0
+P13.SS
+Text GLabel 2850 3750 3    40   Input ~ 0
+P13.DAV
+Wire Wire Line
+	2450 3750 2450 3600
+Wire Wire Line
+	2550 3600 2550 3750
+Wire Wire Line
+	2650 3600 2650 3750
+Wire Wire Line
+	2750 3600 2750 3750
+Wire Wire Line
+	2850 3600 2850 3750
+$Comp
+L CONN06 P15
+U 1 1 5A48D27E
+P 3650 3400
+F 0 "P15" H 3650 3750 50  0000 C CNN
+F 1 "CONN06" V 3750 3400 50  0001 C CNN
+F 2 "avionica:idc-6p" H 3650 3400 60  0001 C CNN
+F 3 "" H 3650 3400 60  0000 C CNN
+	1    3650 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR17
+U 1 1 5A48D285
+P 4000 3750
+F 0 "#PWR17" H 4000 3500 50  0001 C CNN
+F 1 "GND" H 4000 3600 50  0000 C CNN
+F 2 "" H 4000 3750 50  0000 C CNN
+F 3 "" H 4000 3750 50  0000 C CNN
+	1    4000 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3600 3900 3650
+Wire Wire Line
+	3900 3650 4000 3650
+Wire Wire Line
+	4000 3650 4000 3750
+Text GLabel 3400 3750 3    40   Input ~ 0
+SCK
+Text GLabel 3500 3750 3    40   Output ~ 0
+MISO
+Text GLabel 3600 3750 3    40   Input ~ 0
+MOSI
+Text GLabel 3700 3750 3    40   Input ~ 0
+P14.SS
+Text GLabel 3800 3750 3    40   Input ~ 0
+P14.DAV
+Wire Wire Line
+	3400 3750 3400 3600
+Wire Wire Line
+	3500 3600 3500 3750
+Wire Wire Line
+	3600 3600 3600 3750
+Wire Wire Line
+	3700 3600 3700 3750
+Wire Wire Line
+	3800 3600 3800 3750
+$Comp
+L CONN06 P16
+U 1 1 5A48D298
+P 4600 3400
+F 0 "P16" H 4600 3750 50  0000 C CNN
+F 1 "CONN06" V 4700 3400 50  0001 C CNN
+F 2 "avionica:idc-6p" H 4600 3400 60  0001 C CNN
+F 3 "" H 4600 3400 60  0000 C CNN
+	1    4600 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR18
+U 1 1 5A48D29F
+P 4950 3750
+F 0 "#PWR18" H 4950 3500 50  0001 C CNN
+F 1 "GND" H 4950 3600 50  0000 C CNN
+F 2 "" H 4950 3750 50  0000 C CNN
+F 3 "" H 4950 3750 50  0000 C CNN
+	1    4950 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3600 4850 3650
+Wire Wire Line
+	4850 3650 4950 3650
+Wire Wire Line
+	4950 3650 4950 3750
+Text GLabel 4350 3750 3    40   Input ~ 0
+SCK
+Text GLabel 4450 3750 3    40   Output ~ 0
+MISO
+Text GLabel 4550 3750 3    40   Input ~ 0
+MOSI
+Text GLabel 4650 3750 3    40   Input ~ 0
+P15.SS
+Text GLabel 4750 3750 3    40   Input ~ 0
+P15.DAV
+Wire Wire Line
+	4350 3750 4350 3600
+Wire Wire Line
+	4450 3600 4450 3750
+Wire Wire Line
+	4550 3600 4550 3750
+Wire Wire Line
+	4650 3600 4650 3750
+Wire Wire Line
+	4750 3600 4750 3750
+$Comp
+L CONN06 P17
+U 1 1 5A48D510
+P 1750 4250
+F 0 "P17" H 1750 4600 50  0000 C CNN
+F 1 "CONN06" V 1850 4250 50  0001 C CNN
+F 2 "avionica:idc-6p" H 1750 4250 60  0001 C CNN
+F 3 "" H 1750 4250 60  0000 C CNN
+	1    1750 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR20
+U 1 1 5A48D517
+P 2100 4600
+F 0 "#PWR20" H 2100 4350 50  0001 C CNN
+F 1 "GND" H 2100 4450 50  0000 C CNN
+F 2 "" H 2100 4600 50  0000 C CNN
+F 3 "" H 2100 4600 50  0000 C CNN
+	1    2100 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4450 2000 4500
+Wire Wire Line
+	2000 4500 2100 4500
+Wire Wire Line
+	2100 4500 2100 4600
+Text GLabel 1500 4600 3    40   Input ~ 0
+SCK
+Text GLabel 1600 4600 3    40   Output ~ 0
+MISO
+Text GLabel 1700 4600 3    40   Input ~ 0
+MOSI
+Text GLabel 1800 4600 3    40   Input ~ 0
+P16.SS
+Text GLabel 1900 4600 3    40   Input ~ 0
+P16.DAV
+Wire Wire Line
+	1500 4600 1500 4450
+Wire Wire Line
+	1600 4450 1600 4600
+Wire Wire Line
+	1700 4450 1700 4600
+Wire Wire Line
+	1800 4450 1800 4600
+Wire Wire Line
+	1900 4450 1900 4600
+$Comp
+L CONN06 P18
+U 1 1 5A48D52A
+P 2700 4250
+F 0 "P18" H 2700 4600 50  0000 C CNN
+F 1 "CONN06" V 2800 4250 50  0001 C CNN
+F 2 "avionica:idc-6p" H 2700 4250 60  0001 C CNN
+F 3 "" H 2700 4250 60  0000 C CNN
+	1    2700 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR21
+U 1 1 5A48D531
+P 3050 4600
+F 0 "#PWR21" H 3050 4350 50  0001 C CNN
+F 1 "GND" H 3050 4450 50  0000 C CNN
+F 2 "" H 3050 4600 50  0000 C CNN
+F 3 "" H 3050 4600 50  0000 C CNN
+	1    3050 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4450 2950 4500
+Wire Wire Line
+	2950 4500 3050 4500
+Wire Wire Line
+	3050 4500 3050 4600
+Text GLabel 2450 4600 3    40   Input ~ 0
+SCK
+Text GLabel 2550 4600 3    40   Output ~ 0
+MISO
+Text GLabel 2650 4600 3    40   Input ~ 0
+MOSI
+Text GLabel 2750 4600 3    40   Input ~ 0
+P17.SS
+Text GLabel 2850 4600 3    40   Input ~ 0
+P17.DAV
+Wire Wire Line
+	2450 4600 2450 4450
+Wire Wire Line
+	2550 4450 2550 4600
+Wire Wire Line
+	2650 4450 2650 4600
+Wire Wire Line
+	2750 4450 2750 4600
+Wire Wire Line
+	2850 4450 2850 4600
+$Comp
+L CONN06 P19
+U 1 1 5A48D544
+P 3650 4250
+F 0 "P19" H 3650 4600 50  0000 C CNN
+F 1 "CONN06" V 3750 4250 50  0001 C CNN
+F 2 "avionica:idc-6p" H 3650 4250 60  0001 C CNN
+F 3 "" H 3650 4250 60  0000 C CNN
+	1    3650 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR22
+U 1 1 5A48D54B
+P 4000 4600
+F 0 "#PWR22" H 4000 4350 50  0001 C CNN
+F 1 "GND" H 4000 4450 50  0000 C CNN
+F 2 "" H 4000 4600 50  0000 C CNN
+F 3 "" H 4000 4600 50  0000 C CNN
+	1    4000 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4450 3900 4500
+Wire Wire Line
+	3900 4500 4000 4500
+Wire Wire Line
+	4000 4500 4000 4600
+Text GLabel 3400 4600 3    40   Input ~ 0
+SCK
+Text GLabel 3500 4600 3    40   Output ~ 0
+MISO
+Text GLabel 3600 4600 3    40   Input ~ 0
+MOSI
+Text GLabel 3700 4600 3    40   Input ~ 0
+P18.SS
+Text GLabel 3800 4600 3    40   Input ~ 0
+P18.DAV
+Wire Wire Line
+	3400 4600 3400 4450
+Wire Wire Line
+	3500 4450 3500 4600
+Wire Wire Line
+	3600 4450 3600 4600
+Wire Wire Line
+	3700 4450 3700 4600
+Wire Wire Line
+	3800 4450 3800 4600
+$Comp
+L CONN06 P20
+U 1 1 5A48D55E
+P 4600 4250
+F 0 "P20" H 4600 4600 50  0000 C CNN
+F 1 "CONN06" V 4700 4250 50  0001 C CNN
+F 2 "avionica:idc-6p" H 4600 4250 60  0001 C CNN
+F 3 "" H 4600 4250 60  0000 C CNN
+	1    4600 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR23
+U 1 1 5A48D565
+P 4950 4600
+F 0 "#PWR23" H 4950 4350 50  0001 C CNN
+F 1 "GND" H 4950 4450 50  0000 C CNN
+F 2 "" H 4950 4600 50  0000 C CNN
+F 3 "" H 4950 4600 50  0000 C CNN
+	1    4950 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 4450 4850 4500
+Wire Wire Line
+	4850 4500 4950 4500
+Wire Wire Line
+	4950 4500 4950 4600
+Text GLabel 4350 4600 3    40   Input ~ 0
+SCK
+Text GLabel 4450 4600 3    40   Output ~ 0
+MISO
+Text GLabel 4550 4600 3    40   Input ~ 0
+MOSI
+Text GLabel 4650 4600 3    40   Input ~ 0
+P19.SS
+Text GLabel 4750 4600 3    40   Input ~ 0
+P19.DAV
+Wire Wire Line
+	4350 4600 4350 4450
+Wire Wire Line
+	4450 4450 4450 4600
+Wire Wire Line
+	4550 4450 4550 4600
+Wire Wire Line
+	4650 4450 4650 4600
+Wire Wire Line
+	4750 4450 4750 4600
+NoConn ~ 7250 4350
+Text GLabel 9500 2950 2    40   Output ~ 0
+P20.DAV
+Text GLabel 9500 3050 2    40   Output ~ 0
+P20.SS
+Text GLabel 9500 3150 2    40   Output ~ 0
+P21.DAV
+Text GLabel 9500 3250 2    40   Output ~ 0
+P21.SS
+Text GLabel 9500 3350 2    40   Output ~ 0
+P22.DAV
+Text GLabel 9500 3450 2    40   Output ~ 0
+P22.SS
+Text GLabel 9500 3550 2    40   Output ~ 0
+P23.DAV
+Text GLabel 9500 3650 2    40   Output ~ 0
+P23.SS
+Wire Wire Line
+	9150 2950 9500 2950
+Wire Wire Line
+	9500 3050 9150 3050
+Wire Wire Line
+	9150 3150 9500 3150
+Wire Wire Line
+	9500 3250 9150 3250
+Wire Wire Line
+	9150 3350 9500 3350
+Wire Wire Line
+	9500 3450 9150 3450
+Wire Wire Line
+	9150 3550 9500 3550
+Wire Wire Line
+	9500 3650 9150 3650
+$Comp
+L CONN06 P21
+U 1 1 5A48F7F3
+P 1750 5100
+F 0 "P21" H 1750 5450 50  0000 C CNN
+F 1 "CONN06" V 1850 5100 50  0001 C CNN
+F 2 "avionica:idc-6p" H 1750 5100 60  0001 C CNN
+F 3 "" H 1750 5100 60  0000 C CNN
+	1    1750 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR24
+U 1 1 5A48F7FA
+P 2100 5450
+F 0 "#PWR24" H 2100 5200 50  0001 C CNN
+F 1 "GND" H 2100 5300 50  0000 C CNN
+F 2 "" H 2100 5450 50  0000 C CNN
+F 3 "" H 2100 5450 50  0000 C CNN
+	1    2100 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5300 2000 5350
+Wire Wire Line
+	2000 5350 2100 5350
+Wire Wire Line
+	2100 5350 2100 5450
+Text GLabel 1500 5450 3    40   Input ~ 0
+SCK
+Text GLabel 1600 5450 3    40   Output ~ 0
+MISO
+Text GLabel 1700 5450 3    40   Input ~ 0
+MOSI
+Text GLabel 1800 5450 3    40   Input ~ 0
+P20.SS
+Text GLabel 1900 5450 3    40   Input ~ 0
+P20.DAV
+Wire Wire Line
+	1500 5450 1500 5300
+Wire Wire Line
+	1600 5300 1600 5450
+Wire Wire Line
+	1700 5300 1700 5450
+Wire Wire Line
+	1800 5300 1800 5450
+Wire Wire Line
+	1900 5300 1900 5450
+$Comp
+L CONN06 P22
+U 1 1 5A48F80D
+P 2700 5100
+F 0 "P22" H 2700 5450 50  0000 C CNN
+F 1 "CONN06" V 2800 5100 50  0001 C CNN
+F 2 "avionica:idc-6p" H 2700 5100 60  0001 C CNN
+F 3 "" H 2700 5100 60  0000 C CNN
+	1    2700 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR25
+U 1 1 5A48F814
+P 3050 5450
+F 0 "#PWR25" H 3050 5200 50  0001 C CNN
+F 1 "GND" H 3050 5300 50  0000 C CNN
+F 2 "" H 3050 5450 50  0000 C CNN
+F 3 "" H 3050 5450 50  0000 C CNN
+	1    3050 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 5300 2950 5350
+Wire Wire Line
+	2950 5350 3050 5350
+Wire Wire Line
+	3050 5350 3050 5450
+Text GLabel 2450 5450 3    40   Input ~ 0
+SCK
+Text GLabel 2550 5450 3    40   Output ~ 0
+MISO
+Text GLabel 2650 5450 3    40   Input ~ 0
+MOSI
+Text GLabel 2750 5450 3    40   Input ~ 0
+P21.SS
+Text GLabel 2850 5450 3    40   Input ~ 0
+P21.DAV
+Wire Wire Line
+	2450 5450 2450 5300
+Wire Wire Line
+	2550 5300 2550 5450
+Wire Wire Line
+	2650 5300 2650 5450
+Wire Wire Line
+	2750 5300 2750 5450
+Wire Wire Line
+	2850 5300 2850 5450
+$Comp
+L CONN06 P23
+U 1 1 5A48F827
+P 3650 5100
+F 0 "P23" H 3650 5450 50  0000 C CNN
+F 1 "CONN06" V 3750 5100 50  0001 C CNN
+F 2 "avionica:idc-6p" H 3650 5100 60  0001 C CNN
+F 3 "" H 3650 5100 60  0000 C CNN
+	1    3650 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR26
+U 1 1 5A48F82E
+P 4000 5450
+F 0 "#PWR26" H 4000 5200 50  0001 C CNN
+F 1 "GND" H 4000 5300 50  0000 C CNN
+F 2 "" H 4000 5450 50  0000 C CNN
+F 3 "" H 4000 5450 50  0000 C CNN
+	1    4000 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5300 3900 5350
+Wire Wire Line
+	3900 5350 4000 5350
+Wire Wire Line
+	4000 5350 4000 5450
+Text GLabel 3400 5450 3    40   Input ~ 0
+SCK
+Text GLabel 3500 5450 3    40   Output ~ 0
+MISO
+Text GLabel 3600 5450 3    40   Input ~ 0
+MOSI
+Text GLabel 3700 5450 3    40   Input ~ 0
+P22.SS
+Text GLabel 3800 5450 3    40   Input ~ 0
+P22.DAV
+Wire Wire Line
+	3400 5450 3400 5300
+Wire Wire Line
+	3500 5300 3500 5450
+Wire Wire Line
+	3600 5300 3600 5450
+Wire Wire Line
+	3700 5300 3700 5450
+Wire Wire Line
+	3800 5300 3800 5450
+$Comp
+L CONN06 P24
+U 1 1 5A48F841
+P 4600 5100
+F 0 "P24" H 4600 5450 50  0000 C CNN
+F 1 "CONN06" V 4700 5100 50  0001 C CNN
+F 2 "avionica:idc-6p" H 4600 5100 60  0001 C CNN
+F 3 "" H 4600 5100 60  0000 C CNN
+	1    4600 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR27
+U 1 1 5A48F848
+P 4950 5450
+F 0 "#PWR27" H 4950 5200 50  0001 C CNN
+F 1 "GND" H 4950 5300 50  0000 C CNN
+F 2 "" H 4950 5450 50  0000 C CNN
+F 3 "" H 4950 5450 50  0000 C CNN
+	1    4950 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5300 4850 5350
+Wire Wire Line
+	4850 5350 4950 5350
+Wire Wire Line
+	4950 5350 4950 5450
+Text GLabel 4350 5450 3    40   Input ~ 0
+SCK
+Text GLabel 4450 5450 3    40   Output ~ 0
+MISO
+Text GLabel 4550 5450 3    40   Input ~ 0
+MOSI
+Text GLabel 4650 5450 3    40   Input ~ 0
+P23.SS
+Text GLabel 4750 5450 3    40   Input ~ 0
+P23.DAV
+Wire Wire Line
+	4350 5450 4350 5300
+Wire Wire Line
+	4450 5300 4450 5450
+Wire Wire Line
+	4550 5300 4550 5450
+Wire Wire Line
+	4650 5300 4650 5450
+Wire Wire Line
+	4750 5300 4750 5450
+Wire Wire Line
+	7250 2250 6900 2250
+Wire Wire Line
+	6900 2350 7250 2350
+Text GLabel 6900 2250 0    40   Output ~ 0
+P24.DAV
+Text GLabel 6900 2350 0    40   Output ~ 0
+P24.SS
+Wire Wire Line
+	7250 2450 6900 2450
+Wire Wire Line
+	6900 2550 7250 2550
+Text GLabel 6900 2450 0    40   Output ~ 0
+P25.DAV
+Text GLabel 6900 2550 0    40   Output ~ 0
+P25.SS
+Wire Wire Line
+	7250 2650 6900 2650
+Wire Wire Line
+	6900 2750 7250 2750
+Text GLabel 6900 2650 0    40   Output ~ 0
+P26.DAV
+Text GLabel 6900 2750 0    40   Output ~ 0
+P26.SS
+Wire Wire Line
+	7250 2850 6900 2850
+Wire Wire Line
+	6900 2950 7250 2950
+Text GLabel 6900 2850 0    40   Output ~ 0
+P27.DAV
+Text GLabel 6900 2950 0    40   Output ~ 0
+P27.SS
+Wire Wire Line
+	7250 3150 6900 3150
+Wire Wire Line
+	6900 3250 7250 3250
+Text GLabel 6900 3150 0    40   Output ~ 0
+P28.DAV
+Text GLabel 6900 3250 0    40   Output ~ 0
+P28.SS
+Wire Wire Line
+	7250 3350 6900 3350
+Wire Wire Line
+	6900 3450 7250 3450
+Text GLabel 6900 3350 0    40   Output ~ 0
+P29.DAV
+Text GLabel 6900 3450 0    40   Output ~ 0
+P29.SS
+Wire Wire Line
+	7250 3550 6900 3550
+Wire Wire Line
+	6900 3650 7250 3650
+Text GLabel 6900 3550 0    40   Output ~ 0
+P30.DAV
+Text GLabel 6900 3650 0    40   Output ~ 0
+P30.SS
+Wire Wire Line
+	7250 3750 6900 3750
+Wire Wire Line
+	6900 3850 7250 3850
+Text GLabel 6900 3750 0    40   Output ~ 0
+P31.DAV
+Text GLabel 6900 3850 0    40   Output ~ 0
+P31.SS
+$Comp
+L CONN06 P25
+U 1 1 5A490F15
+P 1750 5950
+F 0 "P25" H 1750 6300 50  0000 C CNN
+F 1 "CONN06" V 1850 5950 50  0001 C CNN
+F 2 "avionica:idc-6p" H 1750 5950 60  0001 C CNN
+F 3 "" H 1750 5950 60  0000 C CNN
+	1    1750 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR28
+U 1 1 5A490F1C
+P 2100 6300
+F 0 "#PWR28" H 2100 6050 50  0001 C CNN
+F 1 "GND" H 2100 6150 50  0000 C CNN
+F 2 "" H 2100 6300 50  0000 C CNN
+F 3 "" H 2100 6300 50  0000 C CNN
+	1    2100 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 6150 2000 6200
+Wire Wire Line
+	2000 6200 2100 6200
+Wire Wire Line
+	2100 6200 2100 6300
+Text GLabel 1500 6300 3    40   Input ~ 0
+SCK
+Text GLabel 1600 6300 3    40   Output ~ 0
+MISO
+Text GLabel 1700 6300 3    40   Input ~ 0
+MOSI
+Text GLabel 1800 6300 3    40   Input ~ 0
+P24.SS
+Text GLabel 1900 6300 3    40   Input ~ 0
+P24.DAV
+Wire Wire Line
+	1500 6300 1500 6150
+Wire Wire Line
+	1600 6150 1600 6300
+Wire Wire Line
+	1700 6150 1700 6300
+Wire Wire Line
+	1800 6150 1800 6300
+Wire Wire Line
+	1900 6150 1900 6300
+$Comp
+L CONN06 P26
+U 1 1 5A490F2F
+P 2700 5950
+F 0 "P26" H 2700 6300 50  0000 C CNN
+F 1 "CONN06" V 2800 5950 50  0001 C CNN
+F 2 "avionica:idc-6p" H 2700 5950 60  0001 C CNN
+F 3 "" H 2700 5950 60  0000 C CNN
+	1    2700 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR29
+U 1 1 5A490F36
+P 3050 6300
+F 0 "#PWR29" H 3050 6050 50  0001 C CNN
+F 1 "GND" H 3050 6150 50  0000 C CNN
+F 2 "" H 3050 6300 50  0000 C CNN
+F 3 "" H 3050 6300 50  0000 C CNN
+	1    3050 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6150 2950 6200
+Wire Wire Line
+	2950 6200 3050 6200
+Wire Wire Line
+	3050 6200 3050 6300
+Text GLabel 2450 6300 3    40   Input ~ 0
+SCK
+Text GLabel 2550 6300 3    40   Output ~ 0
+MISO
+Text GLabel 2650 6300 3    40   Input ~ 0
+MOSI
+Text GLabel 2750 6300 3    40   Input ~ 0
+P25.SS
+Text GLabel 2850 6300 3    40   Input ~ 0
+P25.DAV
+Wire Wire Line
+	2450 6300 2450 6150
+Wire Wire Line
+	2550 6150 2550 6300
+Wire Wire Line
+	2650 6150 2650 6300
+Wire Wire Line
+	2750 6150 2750 6300
+Wire Wire Line
+	2850 6150 2850 6300
+$Comp
+L CONN06 P27
+U 1 1 5A490F49
+P 3650 5950
+F 0 "P27" H 3650 6300 50  0000 C CNN
+F 1 "CONN06" V 3750 5950 50  0001 C CNN
+F 2 "avionica:idc-6p" H 3650 5950 60  0001 C CNN
+F 3 "" H 3650 5950 60  0000 C CNN
+	1    3650 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR30
+U 1 1 5A490F50
+P 4000 6300
+F 0 "#PWR30" H 4000 6050 50  0001 C CNN
+F 1 "GND" H 4000 6150 50  0000 C CNN
+F 2 "" H 4000 6300 50  0000 C CNN
+F 3 "" H 4000 6300 50  0000 C CNN
+	1    4000 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 6150 3900 6200
+Wire Wire Line
+	3900 6200 4000 6200
+Wire Wire Line
+	4000 6200 4000 6300
+Text GLabel 3400 6300 3    40   Input ~ 0
+SCK
+Text GLabel 3500 6300 3    40   Output ~ 0
+MISO
+Text GLabel 3600 6300 3    40   Input ~ 0
+MOSI
+Text GLabel 3700 6300 3    40   Input ~ 0
+P26.SS
+Text GLabel 3800 6300 3    40   Input ~ 0
+P26.DAV
+Wire Wire Line
+	3400 6300 3400 6150
+Wire Wire Line
+	3500 6150 3500 6300
+Wire Wire Line
+	3600 6150 3600 6300
+Wire Wire Line
+	3700 6150 3700 6300
+Wire Wire Line
+	3800 6150 3800 6300
+$Comp
+L CONN06 P28
+U 1 1 5A490F63
+P 4600 5950
+F 0 "P28" H 4600 6300 50  0000 C CNN
+F 1 "CONN06" V 4700 5950 50  0001 C CNN
+F 2 "avionica:idc-6p" H 4600 5950 60  0001 C CNN
+F 3 "" H 4600 5950 60  0000 C CNN
+	1    4600 5950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR31
+U 1 1 5A490F6A
+P 4950 6300
+F 0 "#PWR31" H 4950 6050 50  0001 C CNN
+F 1 "GND" H 4950 6150 50  0000 C CNN
+F 2 "" H 4950 6300 50  0000 C CNN
+F 3 "" H 4950 6300 50  0000 C CNN
+	1    4950 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6150 4850 6200
+Wire Wire Line
+	4850 6200 4950 6200
+Wire Wire Line
+	4950 6200 4950 6300
+Text GLabel 4350 6300 3    40   Input ~ 0
+SCK
+Text GLabel 4450 6300 3    40   Output ~ 0
+MISO
+Text GLabel 4550 6300 3    40   Input ~ 0
+MOSI
+Text GLabel 4650 6300 3    40   Input ~ 0
+P27.SS
+Text GLabel 4750 6300 3    40   Input ~ 0
+P27.DAV
+Wire Wire Line
+	4350 6300 4350 6150
+Wire Wire Line
+	4450 6150 4450 6300
+Wire Wire Line
+	4550 6150 4550 6300
+Wire Wire Line
+	4650 6150 4650 6300
+Wire Wire Line
+	4750 6150 4750 6300
+$Comp
+L CONN06 P29
+U 1 1 5A49100A
+P 1750 6800
+F 0 "P29" H 1750 7150 50  0000 C CNN
+F 1 "CONN06" V 1850 6800 50  0001 C CNN
+F 2 "avionica:idc-6p" H 1750 6800 60  0001 C CNN
+F 3 "" H 1750 6800 60  0000 C CNN
+	1    1750 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR32
+U 1 1 5A491011
+P 2100 7150
+F 0 "#PWR32" H 2100 6900 50  0001 C CNN
+F 1 "GND" H 2100 7000 50  0000 C CNN
+F 2 "" H 2100 7150 50  0000 C CNN
+F 3 "" H 2100 7150 50  0000 C CNN
+	1    2100 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 7000 2000 7050
+Wire Wire Line
+	2000 7050 2100 7050
+Wire Wire Line
+	2100 7050 2100 7150
+Text GLabel 1500 7150 3    40   Input ~ 0
+SCK
+Text GLabel 1600 7150 3    40   Output ~ 0
+MISO
+Text GLabel 1700 7150 3    40   Input ~ 0
+MOSI
+Text GLabel 1800 7150 3    40   Input ~ 0
+P28.SS
+Text GLabel 1900 7150 3    40   Input ~ 0
+P28.DAV
+Wire Wire Line
+	1500 7150 1500 7000
+Wire Wire Line
+	1600 7000 1600 7150
+Wire Wire Line
+	1700 7000 1700 7150
+Wire Wire Line
+	1800 7000 1800 7150
+Wire Wire Line
+	1900 7000 1900 7150
+$Comp
+L CONN06 P30
+U 1 1 5A491024
+P 2700 6800
+F 0 "P30" H 2700 7150 50  0000 C CNN
+F 1 "CONN06" V 2800 6800 50  0001 C CNN
+F 2 "avionica:idc-6p" H 2700 6800 60  0001 C CNN
+F 3 "" H 2700 6800 60  0000 C CNN
+	1    2700 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR33
+U 1 1 5A49102B
+P 3050 7150
+F 0 "#PWR33" H 3050 6900 50  0001 C CNN
+F 1 "GND" H 3050 7000 50  0000 C CNN
+F 2 "" H 3050 7150 50  0000 C CNN
+F 3 "" H 3050 7150 50  0000 C CNN
+	1    3050 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 7000 2950 7050
+Wire Wire Line
+	2950 7050 3050 7050
+Wire Wire Line
+	3050 7050 3050 7150
+Text GLabel 2450 7150 3    40   Input ~ 0
+SCK
+Text GLabel 2550 7150 3    40   Output ~ 0
+MISO
+Text GLabel 2650 7150 3    40   Input ~ 0
+MOSI
+Text GLabel 2750 7150 3    40   Input ~ 0
+P29.SS
+Text GLabel 2850 7150 3    40   Input ~ 0
+P29.DAV
+Wire Wire Line
+	2450 7150 2450 7000
+Wire Wire Line
+	2550 7000 2550 7150
+Wire Wire Line
+	2650 7000 2650 7150
+Wire Wire Line
+	2750 7000 2750 7150
+Wire Wire Line
+	2850 7000 2850 7150
+$Comp
+L CONN06 P31
+U 1 1 5A49103E
+P 3650 6800
+F 0 "P31" H 3650 7150 50  0000 C CNN
+F 1 "CONN06" V 3750 6800 50  0001 C CNN
+F 2 "avionica:idc-6p" H 3650 6800 60  0001 C CNN
+F 3 "" H 3650 6800 60  0000 C CNN
+	1    3650 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR34
+U 1 1 5A491045
+P 4000 7150
+F 0 "#PWR34" H 4000 6900 50  0001 C CNN
+F 1 "GND" H 4000 7000 50  0000 C CNN
+F 2 "" H 4000 7150 50  0000 C CNN
+F 3 "" H 4000 7150 50  0000 C CNN
+	1    4000 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 7000 3900 7050
+Wire Wire Line
+	3900 7050 4000 7050
+Wire Wire Line
+	4000 7050 4000 7150
+Text GLabel 3400 7150 3    40   Input ~ 0
+SCK
+Text GLabel 3500 7150 3    40   Output ~ 0
+MISO
+Text GLabel 3600 7150 3    40   Input ~ 0
+MOSI
+Text GLabel 3700 7150 3    40   Input ~ 0
+P30.SS
+Text GLabel 3800 7150 3    40   Input ~ 0
+P30.DAV
+Wire Wire Line
+	3400 7150 3400 7000
+Wire Wire Line
+	3500 7000 3500 7150
+Wire Wire Line
+	3600 7000 3600 7150
+Wire Wire Line
+	3700 7000 3700 7150
+Wire Wire Line
+	3800 7000 3800 7150
+$Comp
+L CONN06 P32
+U 1 1 5A491058
+P 4600 6800
+F 0 "P32" H 4600 7150 50  0000 C CNN
+F 1 "CONN06" V 4700 6800 50  0001 C CNN
+F 2 "avionica:idc-6p" H 4600 6800 60  0001 C CNN
+F 3 "" H 4600 6800 60  0000 C CNN
+	1    4600 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR35
+U 1 1 5A49105F
+P 4950 7150
+F 0 "#PWR35" H 4950 6900 50  0001 C CNN
+F 1 "GND" H 4950 7000 50  0000 C CNN
+F 2 "" H 4950 7150 50  0000 C CNN
+F 3 "" H 4950 7150 50  0000 C CNN
+	1    4950 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 7000 4850 7050
+Wire Wire Line
+	4850 7050 4950 7050
+Wire Wire Line
+	4950 7050 4950 7150
+Text GLabel 4350 7150 3    40   Input ~ 0
+SCK
+Text GLabel 4450 7150 3    40   Output ~ 0
+MISO
+Text GLabel 4550 7150 3    40   Input ~ 0
+MOSI
+Text GLabel 4650 7150 3    40   Input ~ 0
+P31.SS
+Text GLabel 4750 7150 3    40   Input ~ 0
+P31.DAV
+Wire Wire Line
+	4350 7150 4350 7000
+Wire Wire Line
+	4450 7000 4450 7150
+Wire Wire Line
+	4550 7000 4550 7150
+Wire Wire Line
+	4650 7000 4650 7150
+Wire Wire Line
+	4750 7000 4750 7150
+$EndSCHEMATC
