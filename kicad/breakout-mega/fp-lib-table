@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name avionica)(type KiCad)(uri ${KIPRJMOD}\..\modules\avionica.pretty)(options "")(descr ""))
-)
